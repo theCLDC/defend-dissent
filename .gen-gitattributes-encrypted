@@ -1,0 +1,10 @@
+#!/bin/bash
+# encrypt all by default (uncomment once numerous pages are made public)
+rm .gitattributes
+ls *.md > .encrypted.md.list
+while read line
+	do
+		echo "$line filter=git-crypt diff=git-crypt" >> .gitattributes
+	done < .encrypted.md.list
+rm .encrypted.md.list
+
