@@ -16,4 +16,4 @@ public-key-cryptography.md filter=git-crypt diff=git-crypt
 README.md filter=git-crypt diff=git-crypt
 threat-overview.md filter=git-crypt diff=git-crypt
 tor.md filter=git-crypt diff=git-crypt
-trust.md filter=git-crypt diff=git-crypt
+vpn.md filter=git-crypt diff=git-crypt
