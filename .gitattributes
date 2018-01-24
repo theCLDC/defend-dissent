@@ -1,4 +1,5 @@
 authenticity.md filter=git-crypt diff=git-crypt
+certificate-authority.md filter=git-crypt diff=git-crypt
 cryptographic-hash.md filter=git-crypt diff=git-crypt
 cryptography.md filter=git-crypt diff=git-crypt
 framing.md filter=git-crypt diff=git-crypt
