@@ -4,7 +4,6 @@ certificate-authority.md filter=git-crypt diff=git-crypt
 cryptographic-hash.md filter=git-crypt diff=git-crypt
 cryptography.md filter=git-crypt diff=git-crypt
 framing.md filter=git-crypt diff=git-crypt
-gpg.md filter=git-crypt diff=git-crypt
 key-exchange.md filter=git-crypt diff=git-crypt
 main.md filter=git-crypt diff=git-crypt
 man-in-the-middle.md filter=git-crypt diff=git-crypt
