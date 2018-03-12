@@ -12,6 +12,24 @@ For social movements based in the United States of America, where political expr
 
 Since many excellent resources on tools and countermeasures exist and can be adapted for use from guides written for journalists and human rights workers, we will focus here on foundations of cryptography and digital communications, and attempt to delineate the scope and specific capabilities of threats to US-based social movements.  We anticipate that many of these lessons will be applicable to individuals in similar (e.g. OECD) countries.
 
+#### Understanding threats
+
+Digital threat modeling--understanding what information or communications need to be protected, who they need to be protected from, and the degree of harm if they are compromised--is the starting point of most approaches to digital security.  Comprehending the full range of digital threats available to adversaries is difficult enough--realistically assessing the likelihood 
+
+This is covered in detail in the [Threat overview](threat-overview.md) section.
+
+
+
+#### Countermeasures
+
+While we won't spend much time listing specific "secure" apps, technologies, and platforms (since this work is well done elsewhere) we will explore fundamental properties of security-enhancing technologies and choices.
+
+1. Minimize the number of **trusted** platforms, apps, devices, and people.  In contrast, **trustworthy** entities are essential to community organizing and should be embraced and nurtured!  But make technological and operational choices that *require* the trust of as few as possible--since each **trusted** entity represents a possible point of compromise.
+
+1. Use [open source](modern-cryptography.md) apps whenever possible.
+
+1. 
+
 
 
 
