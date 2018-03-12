@@ -26,12 +26,13 @@ While we won't spend much time listing specific "secure" apps, technologies, and
 
 1. Use [open source](modern-cryptography.md#security-is-guaranteed-through-transparency) apps whenever possible.
 
-1. Use [end to end encrypted](end-to-end-encryption.md) apps whenever possible.
+1. Use [end to end encrypted](end-to-end-encryption.md) apps whenever possible, otherwise store data locally.
 
 1. Ensure devices remain under your physical control (they are not confiscated or physically accessed without your knowledge).
 
 1. Keep all and device operating systems up to date.
 
+1. Use [strong passwords](passwords.md).
 
 
 
