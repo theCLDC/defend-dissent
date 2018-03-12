@@ -14,11 +14,9 @@ Since many excellent resources on tools and countermeasures exist and can be ada
 
 #### Understanding threats
 
-Digital threat modeling--understanding what information or communications need to be protected, who they need to be protected from, and the degree of harm if they are compromised--is the starting point of most approaches to digital security.  Comprehending the full range of digital threats available to adversaries is difficult enough--realistically assessing the likelihood 
+Digital threat modeling--understanding what information or communications need to be protected, who they need to be protected from, and the degree of harm if they are compromised--is the starting point of most approaches to digital security.  Comprehending the full range of digital threats available to adversaries is difficult enough--realistically assessing the likelihood that these threats will be deployed (especially by various levels of law enforcement or private security) can be especially challenging.
 
 This is covered in detail in the [Threat overview](threat-overview.md) section.
-
-
 
 #### Countermeasures
 
@@ -26,9 +24,14 @@ While we won't spend much time listing specific "secure" apps, technologies, and
 
 1. Minimize the number of **trusted** platforms, apps, devices, and people.  In contrast, **trustworthy** entities are essential to community organizing and should be embraced and nurtured!  But make technological and operational choices that *require* the trust of as few as possible--since each **trusted** entity represents a possible point of compromise.
 
-1. Use [open source](modern-cryptography.md) apps whenever possible.
+1. Use [open source](modern-cryptography.md#security-is-guaranteed-through-transparency) apps whenever possible.
 
-1. 
+1. Use [end to end encrypted](end-to-end-encryption.md) apps whenever possible.
+
+1. Ensure devices remain under your physical control (they are not confiscated or physically accessed without your knowledge).
+
+1. Keep all and device operating systems up to date.
+
 
 
 
