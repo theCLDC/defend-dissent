@@ -3,7 +3,10 @@ authenticity.md filter=git-crypt diff=git-crypt
 certificate-authority.md filter=git-crypt diff=git-crypt
 cryptographic-hash.md filter=git-crypt diff=git-crypt
 cryptography.md filter=git-crypt diff=git-crypt
+end-to-end-encryption.md filter=git-crypt diff=git-crypt
 framing.md filter=git-crypt diff=git-crypt
+goals.md filter=git-crypt diff=git-crypt
+gpg.md filter=git-crypt diff=git-crypt
 key-exchange.md filter=git-crypt diff=git-crypt
 main.md filter=git-crypt diff=git-crypt
 man-in-the-middle.md filter=git-crypt diff=git-crypt
@@ -15,3 +18,7 @@ passwords.md filter=git-crypt diff=git-crypt
 public-key-cryptography.md filter=git-crypt diff=git-crypt
 README.md filter=git-crypt diff=git-crypt
 threat-overview.md filter=git-crypt diff=git-crypt
+todo.md filter=git-crypt diff=git-crypt
+tor.md filter=git-crypt diff=git-crypt
+trust.md filter=git-crypt diff=git-crypt
+vpn.md filter=git-crypt diff=git-crypt
