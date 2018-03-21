@@ -17,7 +17,14 @@ open-source.md filter=git-crypt diff=git-crypt
 passwords.md filter=git-crypt diff=git-crypt
 public-key-cryptography.md filter=git-crypt diff=git-crypt
 README.md filter=git-crypt diff=git-crypt
+threat-bosses.md filter=git-crypt diff=git-crypt
+threat-cops.md filter=git-crypt diff=git-crypt
+threat-industry.md filter=git-crypt diff=git-crypt
+threat-neigh.md filter=git-crypt diff=git-crypt
 threat-overview.md filter=git-crypt diff=git-crypt
+threat-refs.md filter=git-crypt diff=git-crypt
+threat-state.md filter=git-crypt diff=git-crypt
+threat-you.md filter=git-crypt diff=git-crypt
 todo.md filter=git-crypt diff=git-crypt
 tor.md filter=git-crypt diff=git-crypt
 trust.md filter=git-crypt diff=git-crypt
