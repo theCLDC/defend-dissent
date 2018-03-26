@@ -1,10 +1,10 @@
 anonymous-routing.md filter=git-crypt diff=git-crypt
 authenticity.md filter=git-crypt diff=git-crypt
 certificate-authority.md filter=git-crypt diff=git-crypt
+comms.md filter=git-crypt diff=git-crypt
 cryptographic-hash.md filter=git-crypt diff=git-crypt
 cryptography.md filter=git-crypt diff=git-crypt
 end-to-end-encryption.md filter=git-crypt diff=git-crypt
-framing.md filter=git-crypt diff=git-crypt
 goals.md filter=git-crypt diff=git-crypt
 gpg.md filter=git-crypt diff=git-crypt
 key-exchange.md filter=git-crypt diff=git-crypt
@@ -17,6 +17,7 @@ open-source.md filter=git-crypt diff=git-crypt
 passwords.md filter=git-crypt diff=git-crypt
 public-key-cryptography.md filter=git-crypt diff=git-crypt
 README.md filter=git-crypt diff=git-crypt
+scope.md filter=git-crypt diff=git-crypt
 threat-bosses.md filter=git-crypt diff=git-crypt
 threat-cops.md filter=git-crypt diff=git-crypt
 threat-industry.md filter=git-crypt diff=git-crypt
