@@ -7,4 +7,5 @@ while read line
 		echo "$line filter=git-crypt diff=git-crypt" >> .gitattributes
 	done < .encrypted.md.list
 rm .encrypted.md.list
-
+git add .gitattributes
+git commit .gitattributes -m "auto-updated .gitattributes"
