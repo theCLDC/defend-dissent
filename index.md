@@ -1,17 +1,14 @@
 # Defending Dissent in the United States:
-##A Cryptography Primer, Digital Suppression, and Collective Defense 
+## A Cryptography Primer, Digital Suppression, and Collective Defense 
 ### An open textbook in support of CS175: Communications Security & Social Movements (Oregon State University)
 
 Version 0.1 - mostly a crypto primer
 
-####Glencora Borradaile & Michele Gretes
+#### Glencora Borradaile & Michele Gretes
 
 Glencora Borradaile, Associate Professor of Electrical Engineering and Computer Science, Oregon State University 
 
 Michele Gretes, Civil Liberties Defense Center Digital Security program; Research Associate, Oregon State University
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
-
 
 ## Table of Contents
 
@@ -31,7 +28,7 @@ This open textbook can be read linearly -- cryptography fundamentals followed by
 1. [Passwords](passwords.md)
 1. [Public key cryptography](public-key-cryptography.md)
 1. [Crytographic signing](authenticity.md)*
-1. [Metadata](metadata.md)
+1. [Metadata](meta-data.md)
 1. [Anonymous Routing](anonymous-routing.md)*
 
 ### Part II: Digital Threats to Social Movements
@@ -58,6 +55,9 @@ This open textbook can be read linearly -- cryptography fundamentals followed by
 1. [Digital security means solidarity and community defense](community-defense.md)*
 1. [Take-home security plan](plan.md)*
 
-[//]: (to add: APPENDIX: [suggestions on community contributions: "bug reports"; "feature requests"](howto-contribute.md))
+[//]: (to add: APPENDIX: [suggestions on community contributions: "bug reports"; "feature requests"](howto-contribute.md*))
 
-*indicates a page that is currently locked (to be released in future version) 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.**
+
+*indicates a page that is currently locked (to be released in future versions) 
+**once the open textbook reaches maturity (v.1.0) a more permissive license (to allow remixing) will almost certainly apply.
