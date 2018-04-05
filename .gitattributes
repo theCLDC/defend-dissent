@@ -9,7 +9,6 @@ _drafts/goals.md filter=git-crypt diff=git-crypt
 _drafts/gpg.md filter=git-crypt diff=git-crypt
 _drafts/key-exchange.md filter=git-crypt diff=git-crypt
 _drafts/main.md filter=git-crypt diff=git-crypt
-_drafts/man-in-the-middle.md filter=git-crypt diff=git-crypt
 _drafts/meta-data.md filter=git-crypt diff=git-crypt
 _drafts/modern-cryptography.md filter=git-crypt diff=git-crypt
 _drafts/notes.md filter=git-crypt diff=git-crypt
