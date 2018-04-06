@@ -19,3 +19,12 @@ _drafts/threat-you.md filter=git-crypt diff=git-crypt
 _drafts/todo.md filter=git-crypt diff=git-crypt
 _drafts/tor.md filter=git-crypt diff=git-crypt
 _drafts/trust.md filter=git-crypt diff=git-crypt
+_drafts/cryptographic-hash.md
+_drafts/cryptography.md
+_drafts/goals.md
+_drafts/key-exchange.md
+_drafts/meta-data.md
+_drafts/modern-cryptography.md
+_drafts/passwords.md
+_drafts/public-key-cryptography.md
+_drafts/threat-overview.md
