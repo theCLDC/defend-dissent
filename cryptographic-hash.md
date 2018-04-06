@@ -7,6 +7,7 @@
 1. What a hash function does
 1. What a cryptographic hash function does and how it is distinct form an ordinary hash function
 1. Some examples of the use of cryptographic hash functions 
+
 ---
 
 A *hash function* is any (computer) function that transforms data of arbitrary size (e.g. a name, a document, a computer program) into data of fixed size (e.g. a 3 digit number, a 16 bit number).  The output of a hash function is called the digest, fingerprint, hash value or hash (of the input *message*).
