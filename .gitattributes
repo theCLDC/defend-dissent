@@ -19,9 +19,6 @@ _drafts/threat-you.md filter=git-crypt diff=git-crypt
 _drafts/todo.md filter=git-crypt diff=git-crypt
 _drafts/tor.md filter=git-crypt diff=git-crypt
 _drafts/trust.md filter=git-crypt diff=git-crypt
-_drafts/cryptographic-hash.md filter=git-crypt diff=git-crypt
-_drafts/cryptography.md filter=git-crypt diff=git-crypt
-_drafts/goals.md filter=git-crypt diff=git-crypt
 _drafts/key-exchange.md filter=git-crypt diff=git-crypt
 _drafts/meta-data.md filter=git-crypt diff=git-crypt
 _drafts/modern-cryptography.md filter=git-crypt diff=git-crypt
