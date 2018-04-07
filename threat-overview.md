@@ -12,7 +12,7 @@
 
 Social movements challenging powerful individuals, organizations, and social structures face a broad range of digital threats.  Specific threats vary widely in technical sophistication, likelihood, and potential for harm.  *Threat modeling* is a process whereby an organization or individual considers their range of adversaries, estimates the likelihood of their various data and devices falling victim to attack, and finally considers the damage done if attacks were to succeed.  There are a number of ways to categorize possible attacks: by **adversary** (e.g. your unfriendly neighborhood neonazi, a corporate security firm, or government-sponsored hackers), by **site** of attack (a coffee shop wifi network, someone breaking into your office, or siphoning all traffic from the internet backbone) or **technique** (man-in-the-middle, brute force password cracking, tricking you or looking over your shoulder).  Given a [list of NSA programs](https://snowdenarchive.cjfe.org) it makes most sense to categorize attacks by both **site** and **technique**, for example:
 
-####Threats according to attack type (site or technique): 
+#### Threats according to attack type (site or technique): 
 
 > Sorted roughly by most to least likely, and lowest to highest risk of attack discovery
 
@@ -46,29 +46,29 @@ Second, depending on the kinds of work done (e.g. topics and tactics) by particu
 
 Third, the countermeasures required to protect against certain higher-grade adversary attacks tend to be more sophisticated (requiring greater training or resources).  Likewise, higher-grade attacks can be defended against with less certainty.
 
-####Adversaries - from lowest to highest grade capabilities
+#### Adversaries - from lowest to highest grade capabilities
 
 Note that most techniques available to lower grade adversaries are also available to higher-grade adversaries.  Also, it is import  ant to note that these categories are not absolute, for example police departments in large cities may have access to nation-state level resources, or a particularly skilled Neighborhood Nazi may possess advanced hacking skills that enable some corporate- or nation-state-level attacks.
 
-1. Yourself, Oversharing
+1. **Yourself, Oversharing**
     * public social media
     * data voluntarily shared with companies (machine learning, surveillance mining)
 
 
-1. Neighborhood Nazis
+1. **Neighborhood Nazis**
     * phishing / social engineering / social media hijacking
     * doxxing
     * shoulder surfing passwords / info
     * device theft
     * possibly attacks on outdated devices
 
-1. Bosses/Local Sysadmins
+1. **Bosses/Local Sysadmins**
     * work or school email and file storage
     * web browsing history and unencrypted content
     * password capture
     * local network censorship
 
-1. Private Industry
+1. **Private Industry**
     * commercial malware - phone hacking
     * cell site simulators/IMSI catchers
     * possible mobile phone communications (SS7)
@@ -77,11 +77,11 @@ Note that most techniques available to lower grade adversaries are also availabl
     * social media monitoring
     * Fusion Center data
 
-1. Local Law Enforcement
+1. **Local Law Enforcement**
     * legal requests (subpeonas, search warrants)
     * device confiscation
 
-1. Nation-States
+1. **Nation-States**
     * mass surveillance (passive global surveillance of Internet and cell networks)
     * storage, search, and anaylsis (XKEYSCORE, machine learning)
     * web redirection via packet injection (QUANTUM)
