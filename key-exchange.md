@@ -1,3 +1,8 @@
+---
+title: Key Exhange
+layout: post
+---
+
 ## Key exchange: How to agree on a cryptographic key over the Internet
 
 > We recommend that you read [What is encryption?](cryptography.md) and [Modern Cryptography](modern-cryptography.md) before reading this section.
