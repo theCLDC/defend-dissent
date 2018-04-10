@@ -1,6 +1,6 @@
 ---
-title: Key Exhange
-layout: post
+title: Key Exchange
+encoding: utf-8
 ---
 
 ## Key exchange: How to agree on a cryptographic key over the Internet
