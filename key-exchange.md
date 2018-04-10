@@ -2,6 +2,7 @@
 title: Key Exchange
 encoding: utf-8
 ---
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 
 ## Key exchange: How to agree on a cryptographic key over the Internet
 
