@@ -1,7 +1,3 @@
----
-title: Key Exchange
-encoding: utf-8
----
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 
 ## Key exchange: How to agree on a cryptographic key over the Internet
@@ -65,11 +61,11 @@ Now, to the paint sample received from Bobby, Assata mixes in 10mL of her secret
 
 ### Diffie-Hellman key exchange
 
-Again, we need a way to do this mathematically.  We do so with a commutative mathematical operation that is hard or impossible to reverse.  A mathematical operation or function that is hard to reverse is called a one-way function. Let's represent our mathematical operation with the symbol "&#2606;" &#e29886;.  That is, a&#2606;b = c for some numbers a, b, and c.  Commutative means that a&#2606;b = b&#2606;a.  That &#2606; is one-way means that if you know b and c, you cannot easily figure out what a is.  In practice, one should only be able to figure out what a is by a brute force (or close to brute force) attack: by trying every possibility for a.  You may think of &#2606; as multiplication (which is commutative but is *not* one way).  (For those mathematically inclined, &#2606; can be modular exponentiation for real implementations of Diffie-Hellman.)
+Again, we need a way to do this mathematically.  We do so with a commutative mathematical operation that is hard or impossible to reverse.  A mathematical operation or function that is hard to reverse is called a one-way function. Let's represent our mathematical operation with the symbol &#2606;.  That is, a&#2606;b = c for some numbers a, b, and c.  Commutative means that a&#2606;b = b&#2606;a.  That &#2606; is one-way means that if you know b and c, you cannot easily figure out what a is.  In practice, one should only be able to figure out what a is by a brute force (or close to brute force) attack: by trying every possibility for a.  You may think of &#2606; as multiplication (which is commutative but is *not* one way).  (For those mathematically inclined, &#2606; can be modular exponentiation for real implementations of Diffie-Hellman.)
 
 ![Agreeing on a secret key](pictures/key-exchange-paint-with-math.png "Agreeing on a secret key")
 
-In the above, Assata and Bobby agree on a number p which is public.  Assata chooses a secret number a, computes p&#2606;a and sends the result to Bobby.  Since &#2606; is one-way, an eavesdropper will know p and p&#2606;a, but will not be able to (easily) determine a. Bobby chooses a secret number b, computes p&#2606;b and sends the result to Assata. An eavesdropper knows p&#2606;b, but not b. Assata computes (p&#2606;b)&#2606;a, using the message from Bobby and her own secret number. Bobby computes (p&#2606;a)&#2606;b, using the message from Assata and his own secret number.  Since &#2606; is commutative (p&#2606;b)&#2606;a=(p&#2606;a)&#2606;b and so Assata and Bobby now have computed a common number.  Since the eavesdropper only knows p&#2606;a, p&#2606;b, and p, and since $star; is one-way, the eavesdropper has no efficient means of computing Assata and Bobby's shared common number: it is secret to Assata and Bobby.  Assata and Bobby can use this shared number as their cryptographic key.
+In the above, Assata and Bobby agree on a number p which is public.  Assata chooses a secret number a, computes p&#2606;a and sends the result to Bobby.  Since &#2606; is one-way, an eavesdropper will know p and p&#2606;a, but will not be able to (easily) determine a. Bobby chooses a secret number b, computes p&#2606;b and sends the result to Assata. An eavesdropper knows p&#2606;b, but not b. Assata computes (p&#2606;b)&#2606;a, using the message from Bobby and her own secret number. Bobby computes (p&#2606;a)&#2606;b, using the message from Assata and his own secret number.  Since &#2606; is commutative (p&#2606;b)&#2606;a=(p&#2606;a)&#2606;b and so Assata and Bobby now have computed a common number.  Since the eavesdropper only knows p&#2606;a, p&#2606;b, and p, and since &#2606; is one-way, the eavesdropper has no efficient means of computing Assata and Bobby's shared common number: it is secret to Assata and Bobby.  Assata and Bobby can use this shared number as their cryptographic key.
 
 ### Using Diffie-Hellman key exchange
 
