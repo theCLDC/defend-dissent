@@ -48,7 +48,7 @@ This open textbook can be read linearly -- cryptography fundamentals followed by
 1. [Endpoint security](endpoints.md)*
 1. [Effective Passwords](password-practices)*
 1. [Private communications](comms.md)*
-1. [Anonymity online: Tor](tor.md)*
+1. [Anonymity online: Tor](tor.md)
 
 ### Conclusion
 

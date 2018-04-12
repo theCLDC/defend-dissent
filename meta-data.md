@@ -1,5 +1,7 @@
 ## Metadata
 
+> We recommend that you read [Modern Cryptography](modern-cryptography.md) before reading this section.
+
 #### What you'll learn
 
 1. What metadata is.
@@ -34,8 +36,7 @@ In May 2017, Reality Winner disclosed NSA documents reporting on Russian interfe
 
 #### What to learn next
 
-* HTTPS?
-* How to conceal your Internet traffic metadata using a [Virtual Private Network or Tor](anonymous-routing.md). NOTE THIS REQUIRES UNDERSTANDING MODERN CRYPTOGRAPHY AND OTHER TOPICS FIRST ...
+* How to conceal your Internet traffic metadata using a [Virtual Private Network or Tor](anonymous-routing.md).
 
 
 #### External resources
