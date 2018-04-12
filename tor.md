@@ -11,7 +11,7 @@
 
 ### Overview
 
-Using Tor it is possible to conceal your identity online from [most adversaries](threat-overview.md) and even enjoy significant protection against a [nation-state level adversary](threat-state.md), with only a few known exceptions.  There are important warnings and caveats, however: **remember, unless you cannot avoid it, never entrust your life or freedom entirely to ~~a complex machine you cannot fully control~~ a computer**.
+Using Tor it is possible to conceal your identity online from [most adversaries](threat-overview.md) and even enjoy significant protection against a [nation-state level adversary](threat-state.md), with only a few known exceptions.  There are important warnings and caveats, however: **remember, unless you cannot avoid it, never entrust your life or freedom entirely to** ~~a complex machine you cannot fully control~~ **a computer**.
 
 ### Warning: Situations in which Tor cannot protect you
 
@@ -26,13 +26,13 @@ Download Tor Browser from [the Tor Project website](https://www.torproject.org/)
 
 Here are some use cases:
 
-1. **Anonymous browsing** - Don't log in to any websites, ideally make a new identity to separate top secret research);
+1. **Anonymous browsing** - Don't log in to any websites, ideally make a new identity to separate top secret research.
 
-1. **Pseudonymous posting** - Use an identitito post press releases/participate in forums/online discussions (never log in to a service outside of tor, greater caution required the longer a secret identity needs to be maintained);
+1. **Pseudonymous posting** - Create a pseudonym unrelated to your true identity in order to post press releases, or participate in forums and other online discussions.  Be sure to *never* log in using this pseudonym outside of Tor.  Also, greater caution is required the longer a pseudonmyous identity needs to be maintained.
 
 1. **Hide your physical location** - Non-anonymous use of personal/organizational social media, to conceal physical location from the social media platform;
 
-1. **Top secret chats** - between people who know each other (needs some additional, Tor-safe chat program like xmpp/pidgin/gajim, tor messenger, tox, riot.im)
+1. **Top secret chats** - people who know each other use the Tor network to chat using some Tor-compatible chat program like xmpp/pidgin/gajim, tor messenger, tox, riot.im.  Since this involves using apps other than the Tor browser, this use should be considered somewhat experimental.  
 
 ### Tor best practices
 
