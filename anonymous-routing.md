@@ -26,8 +26,7 @@ A VPN operates as a (hopefully benign) middle man.  Rather than sending all her 
 
 ![Virtual Private Networks](pictures/anonymous-browsing-vpn.jpeg "Virtual Private Networks")
 
-Of course, the VPN provider knows all of your Internet behavior, and with their cooperation, an adversary would too.  That is, you are trusting your VPN provider with that information.  However, your ISP (without using a VPN) has access to the same information, but your ISP does not conceal your IP address from destination servers (e.g. web, email, etc.) on the Internet.  That is, you are putting the same trust in your VPN provider as you must in your ISP.  The only increased privacy risk comes with using a VPN across many locations. 
-
+Of course, the VPN provider knows all of your Internet behavior, and with their cooperation, an adversary would too.  That is, you are trusting your VPN provider with that information.  However, your ISP (without using a VPN) has access to the same information, but your ISP does not conceal your IP address from destination servers (e.g. web, email, etc.) on the Internet.  That is, you are putting the same trust in your VPN provider as you must in your ISP.  Some increased privacy risk, however, comes with using the same VPN across many locations, giving a single entitiy (that VPN) a more complete view of your Internet use than available to the ISP at each location.
 
 ### Not trusting the middle man: The Onion Router
 
@@ -43,9 +42,9 @@ In order to send a web request, you first encrypt the request with the exit key,
 
 In order to recreate your path through the Tor network and therefore your web request, your adversary would need to control all three nodes that you select as your entry, relay and exit nodes.  An adversary controlling 80% of the Tor network would only have a 50% chance of controlling all three nodes that you select.  Since there are thousands of Tor nodes (that anyone can volunteer to operate), this is unlikely.
 
-An alternate attack that an adversary could take would be a *confirmation attack*.  In this scenario, the adversary is trying to prove that you have visited a particular web service.  If they can access your web traffic (through your ISP, for example) and the web traffic of the target web service (through legal or extra-legal means) then your adversary may be able to match up your use of Tor to accesses to the web service from Tor.  This type of correlation was used in the [case against Anonymous hacker Jeremy Hammond](https://www.documentcloud.org/documents/1342115-timeline-correlation-jeremy-hammond-and-anarchaos.html).
+An alternate attack that an adversary could take would be a *confirmation attack*.  In this scenario, the adversary is trying to prove that you have visited a particular web service.  If they can access your web traffic (through your ISP, for example) and the web traffic of the target web service (through legal or extra-legal means) then your adversary may be able to match up your use of Tor to accesses to the web service from Tor.  This type of correlation was used in the [case against Jeremy Hammond, convicted for hacking activities conducted by an Anonymous collective](https://www.documentcloud.org/documents/1342115-timeline-correlation-jeremy-hammond-and-anarchaos.html).
 
-Other attacks have been made on Tor too, but the Tor project is very responsive to improving their technology to improve their security.  We discuss pitfalls user may run into when trying to access the web anonymously below.
+Other attacks have been made on Tor too, but the Tor project is very responsive to improving their technology to improve their security.  We discuss obstacles to anonymous browsing below and pitfalls a user may run into as well as best practices when trying to access the web anonymously in the [Tor chapter](tor.md).
 
 ### Use and prevention of anonymous browsing technologies
 
