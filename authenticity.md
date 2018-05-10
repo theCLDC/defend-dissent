@@ -68,8 +68,8 @@ COMING SOON!  A tale of a falsified Linux Mint distribution...
 
 #### External resources
 
-* [On Digital Signatures and Key Verification](https://www.qubes-os.org/security/verifying-signatures)
-* 
+* [Qubes Project: On Digital Signatures and Key Verification](https://www.qubes-os.org/security/verifying-signatures)
+* [Tor Project: How to Verify Signatures for Packages](https://www.torproject.org/docs/verifying-signatures.html.en)
 
 
 
