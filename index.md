@@ -27,7 +27,7 @@ This open textbook can be read linearly -- cryptography fundamentals followed by
 1. [How the man in the middle can foil your crypto, and what you can do about it.](man-in-the-middle.md)
 1. [Passwords](passwords.md)
 1. [Public key cryptography](public-key-cryptography.md)
-1. [Crytographic signing](authenticity.md)*
+1. [Crytographic signing](authenticity.md)
 1. [Metadata](meta-data.md)
 1. [Anonymous Routing](anonymous-routing.md)
 
