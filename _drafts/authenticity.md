@@ -46,7 +46,7 @@ As in our example above, cryptographic signing can provide authenticity to messa
 
 ## Verifying software
 
-Perhaps the most explicit and common use of cryptographic signatures is for verifying software, even if you aren't aware of it.  Software, such as apps, will only do what their developers want and say they will do if they haven't been tampered on the way from the developer to your computer or phone.  Responsible developers will sign their products, in the same way as we describe for messages.  A program or app is really just a computer file (or set of files), which is just a sequence of characters, or a type of message.  Responsible and careful users can check the signature by getting the developer's public key and performing the validation illustrated above.  (The developer should provide their public key via a channel different from the one you downloaded the software from.  This would allow an [out-of-band comparison](man-in-the-middle.md) -- the public key, which you use for validation, is out-of-band from the message, or software download.)
+Perhaps the most explicit and common use of cryptographic signatures is for verifying software, even if you aren't aware of it.  Software, such as apps, will only do what their developers want and say they will do if they haven't been tampered on the way from the developer to your computer or phone.  Responsible developers will sign their products, in the same way as we describe for messages.  A program or app is really just a computer file (or set of files), which is just a sequence of characters, or a type of message.  If a developer has signed their software using public key cryptography, a careful users can check the signature by getting the developer's public key and performing the validation illustrated above.  (The developer should provide their public key via a channel different from the one you downloaded the software from.  This would allow an [out-of-band comparison](man-in-the-middle.md) -- the public key, which you use for validation, is out-of-band from the message, or software download.)
 
 ## Managing fingerprint validation and the web of trust
 
@@ -60,7 +60,7 @@ This is the basis of the web of trust.  Rather than directly verifying fingerpri
 
 ### In context: 
 
-COMING SOON!
+COMING SOON!  A tale of a falsified Linux Mint distribution...
 
 #### What to learn next
 
@@ -68,7 +68,8 @@ COMING SOON!
 
 #### External resources
 
-* [link title](https://link.org/)
+* [On Digital Signatures and Key Verification](https://www.qubes-os.org/security/verifying-signatures)
+* 
 
 
 
