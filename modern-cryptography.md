@@ -1,3 +1,7 @@
+---
+encoding: "utf-8"
+---
+
 ## Modern cryptography
 
 > We recommend that you read [What is encryption?](cryptography.md) first.
