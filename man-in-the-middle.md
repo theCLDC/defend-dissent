@@ -1,3 +1,7 @@
+---
+encoding: "utf-8"
+---
+
 ## How the man in the middle can foil your crypto, and what you can do about it.
 
 > We recommend that you read [Key exchange: How to agree on a cryptographic key over the Internet](key-exchange.md) and [Cryptographic hashes](cryptographic-hash.md) before reading this section.
