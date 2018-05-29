@@ -1,3 +1,7 @@
+---
+encoding: "utf-8"
+---
+
 ## Public Key Cryptography
 
 > We recommend that you read about [modern cryptography](modern-cryptography.md) and [exchanging keys](key-exchange.md) before reading this section.
