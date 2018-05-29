@@ -1,5 +1,13 @@
 ---
 encoding: "utf-8"
+sub {
+    font-size: smaller;
+    vertical-align: sub;
+}
+sup {
+    font-size: smaller;
+    vertical-align: super;
+}
 ---
 
 ## Modern cryptography
