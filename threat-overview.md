@@ -4,8 +4,8 @@
 
 #### What you'll learn
 
+1. how to assess risk of various threats social movements face - how likely, how damaging, how willing to change
 1. how to categorize digital threats - by type, technique, adversary
-1. how to assess risk of various threats social movements face - how likely, how damaging
 1. some specific examples of attacks
 
 ### Types of threats & threat modelling
