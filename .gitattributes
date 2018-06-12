@@ -10,12 +10,8 @@ _drafts/open-source.md filter=git-crypt diff=git-crypt
 _drafts/README.md filter=git-crypt diff=git-crypt
 _drafts/scope.md filter=git-crypt diff=git-crypt
 _drafts/threat-bosses.md filter=git-crypt diff=git-crypt
-_drafts/threat-cops.md filter=git-crypt diff=git-crypt
-_drafts/threat-industry.md filter=git-crypt diff=git-crypt
 _drafts/threat-neigh.md filter=git-crypt diff=git-crypt
 _drafts/threat-refs.md filter=git-crypt diff=git-crypt
-_drafts/threat-state.md filter=git-crypt diff=git-crypt
 _drafts/threat-you.md filter=git-crypt diff=git-crypt
 _drafts/todo.md filter=git-crypt diff=git-crypt
-_drafts/tor.md filter=git-crypt diff=git-crypt
 _drafts/trust.md filter=git-crypt diff=git-crypt
