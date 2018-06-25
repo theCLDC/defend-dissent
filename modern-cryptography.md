@@ -37,9 +37,7 @@ Since as early as the 19th century, mathematicians have held as a standard that 
 
 ### Security is provided by transparency
 
-In fact, the more transparency around a cryptographic method, the more you can trust the security of the method.  To understand this, consider the how an encryption program (or any computer program, in fact) is created.  It starts with an algorithm as to how to perform the encryption (below, left).  A programmer turns this algorithm into *source* computer code (below, center).  A computer compiles this source code into the program or app that runs on your computer or phone (below, right).
-
-![TODO open source](pictures/modern-cryptography-open-source.png "TODO open source")
+In fact, the more transparency around a cryptographic method, the more you can trust the security of the method.  To understand this, consider the how an encryption program (or any computer program, in fact) is created.  It starts with an algorithm as to how to perform the encryption.  A programmer turns this algorithm into *source* computer code.  A computer compiles this source code into the program or app that runs on your computer or phone.
 
 A good computer programmer should be able to translate from an algorithm to source code and back. A security professional would be able to evaluate the security of a cryptographic protocol based on the algorithm, but should also evaluate the source code to be certain of its faithful implementation (that there are no mistakes or *bugs*, whether intentional or not).  However, as a user, you would only have access to the compiled program, not that you would ever look at it in the form given above.  Unfortunately, given only the compiled code, it is impossible for anyone to recreate the source code.
 

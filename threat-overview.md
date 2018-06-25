@@ -48,12 +48,13 @@ Third, the countermeasures required to protect against certain higher-grade adve
 
 #### Adversaries - from lowest to highest grade capabilities
 
-Note that most techniques available to lower grade adversaries are also available to higher-grade adversaries.  Also, it is import  ant to note that these categories are not absolute, for example police departments in large cities may have access to nation-state level resources, or a particularly skilled Neighborhood Nazi may possess advanced hacking skills that enable some corporate- or nation-state-level attacks.
+Note that most techniques available to lower grade adversaries are also available to higher-grade adversaries.  Also, it is important to note that these categories are not sharply defined, for example police departments in large cities may have access to nation-state level resources, or a particularly skilled Neighborhood Nazi may possess advanced hacking skills that enable some corporate- or nation-state-level attacks.
+
+[The following uninformative lists will probably be deprecated and moved into the revelant articles]
 
 1. **Yourself, Oversharing**
     * public social media
     * data voluntarily shared with companies (machine learning, surveillance mining)
-
 
 1. **Neighborhood Nazis**
     * phishing / social engineering / social media hijacking
@@ -71,11 +72,11 @@ Note that most techniques available to lower grade adversaries are also availabl
 1. **Private Industry**
     * commercial malware - phone hacking
     * cell site simulators/IMSI catchers
-    * possible mobile phone communications (SS7)
+    * mobile phone text messages (SS7 system)
     * legal requests (subpeona) to commercial platforms (email, cloud storage)
     * covert physical attacks (a/v bugs, keystroke loggers)
     * social media monitoring
-    * Fusion Center data
+    * Fusion Center data ...
 
 1. **Local Law Enforcement**
     * legal requests (subpeonas, search warrants)
@@ -91,7 +92,7 @@ Note that most techniques available to lower grade adversaries are also availabl
     * network attacks using zero-day vulnerabilities
     * sophisticated physical attacks (TAO), including supply chain attacks
     * advanced persistent threats against infrastructure (web servers)
-    * country-wide censorship
+    * country-wide censorship (
 
 In the sections corresponding to each grade of adversary, we will highlight important examples of attacks against social movements, whenever possible.
 
