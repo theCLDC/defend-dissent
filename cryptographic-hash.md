@@ -5,7 +5,7 @@
 #### What you'll learn
 
 1. What a hash function does
-1. What a cryptographic hash function does and how it is distinct form an ordinary hash function
+1. What a cryptographic hash function does and how it is distinct from an ordinary hash function
 1. Some examples of the use of cryptographic hash functions 
 
 ---

@@ -39,4 +39,13 @@
     ** https://level-up.cc/curriculum/mobile-safety/how-mobile-networks-work/input/how-do-mobile-devices-work/
 * Tactical Tech (me and my shadow) - mobile device layers diagram:
     ** https://myshadow.org/ckeditor_assets/attachments/94/mobile_breakdowna5.pdf
+* Security in a box--some things horribly out of date but good to account for things here:
+    ** https://securityinabox.org/en/guide/mobile-phones/
+    ** https://securityinabox.org/en/guide/smartphones/
 
+#### Data Protection
+
+* Level-UP.cc training modules on PASSWORDS and BACKUPS:
+** http://level-up.cc/curriculum/protecting-data/
+
+#### Malware Protection
