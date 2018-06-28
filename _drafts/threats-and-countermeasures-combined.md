@@ -1,4 +1,6 @@
-## Framing?
+this file has notes and sections to be adopted to their own chapters.
+
+## Defenses against digital threats [defense-overview.md]
 
 where your data can be (figure and explanation: head -> phone/computer -> cable/wifi/cell -> ISP -> cloud)
 
@@ -7,10 +9,10 @@ who are your adversaries?
 * threat = capability x effort/risk of discovery
 
 overview of the forthcoming parts
-* consider no data/culture
-* data with you/devices
-* data in the wild/communications
-* disguising data/anon-pseud
+* Security culture / minimal data [security-culture.md]
+* Protect your devices / data with you [devices.md]
+* Protect your communications / data in the wild [comms.md]
+* Getting away with it: anonymity, pseudonymity, and anti-censorship [apac.md]
 
 each section will:
 * give more detail of how your data is handled
@@ -30,7 +32,7 @@ When people think of activists and political dissidents under surveillance, they
 
 ---
 
-## Protect your devices MOVED TO STANDALONE FILE
+## Protect your devices MOVED TO STANDALONE FILE [devices.md]
 ---
 
 ## Protect your data
