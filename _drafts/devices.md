@@ -33,6 +33,8 @@
 
 ### Resources
 
+#### Cell Phones
+
 * Level-UP.cc narrative of mobile device network and components:
     ** https://level-up.cc/curriculum/mobile-safety/how-mobile-networks-work/input/how-do-mobile-devices-work/
 * Tactical Tech (me and my shadow) - mobile device layers diagram:
