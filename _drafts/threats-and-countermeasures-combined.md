@@ -1,5 +1,28 @@
 ## Framing?
 
+where your data can be (figure and explanation: head -> phone/computer -> cable/wifi/cell -> ISP -> cloud)
+
+who are your adversaries? 
+* hierarchy of capability
+* threat = capability x effort/risk of discovery
+
+overview of the forthcoming parts
+* consider no data/culture
+* data with you/devices
+* data in the wild/communications
+* disguising data/anon-pseud
+
+each section will:
+* give more detail of how your data is handled
+* describe how to protect yourself/what you can and should do
+* what this will protect you from (specific attacks/known adversaries & capabilities)
+  * range of stories covering different adversaries because what you can do to protect yourself from the government may also protect you from a neighborhood nazi
+
+* nothing will protect you 100%
+* but we can protect communities
+* always consider organizing offline
+* the infrastructure is hostile to you
+
 When people think of activists and political dissidents under surveillance, they most likely think the source is the government at one level or another.  However, the primary opponents of many liberation-focused activists are not necessarily governments, but industries such as oil and gas, agriculture, and arms manufacturers.  These industries can afford to undertake their own surveillance and are not limited by constitutional restrictions.  We describe a small sample of capabilities that are available to industries, and for each particular threat, we describe how one could protect oneself.
 
 * NYC anarcho-tech collective persona-based threat modeling
@@ -15,14 +38,24 @@ When people think of activists and political dissidents under surveillance, they
 
 1. TODO
 
-### ???
+### What devices look like
+
+* tactical tech cell phone layers
+* compare to laptops/computers
+
+### What you can do
 
 * device encryption vs. screen lock
 * strong passwords, fingerprints vs. password/phrase vs. pin no.
 * device updates
 * beware what apps you download
 
-### What does this protect me from? Device theft, confiscation, and infection
+### What you can't do
+
+* build your own computer/phone
+* trust devices 100%, supply chain manipulation
+
+### In context: What does this protect me from? Device theft, confiscation, and infection
 
 * https://motherboard.vice.com/en_us/topic/phone-crackers
 * nazis can steal your device,
@@ -40,11 +73,20 @@ When people think of activists and political dissidents under surveillance, they
 
 1. TODO
 
-### ???
+### What the infrastructure looks like
+
+* tactical tech figure
+* phone communications also go through the same or similar networks
+
+### What you can do
 
 * secure communications 
 * strong passwords
-* (content vs. metadata?)
+
+### What you can't do
+
+* protect meta-data (content vs. metadata?)
+* trust ISPs
 
 ### What does this protect me from? Snoops, Wiretaps, Stingrays, Warrants, and Subpoenas
 
@@ -71,7 +113,7 @@ When people think of activists and political dissidents under surveillance, they
 
 1. TODO
 
-### ???
+### What you can do
 
 * from MG's post?
 * limit how much you post online, consider your privacy settings and geolocation settings (but understand that the policies of the companies that hold your data can change)
