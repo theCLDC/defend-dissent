@@ -15,29 +15,89 @@ Many digital security measures aim to protect information sharing among individu
 
 Social movements aware of the history of informant-driven suppression by state and private adversaries, have worked to developed what is termed "Security Culture".  This term refers to information sharing agreements and other group practices intended to minimize the negative impacts of infiltration, surveillance, and other suppressive threats to the group, its work, its membership, and broader social movements.  It is called a "Culture" since the aspiration is for principles and practices to become reflexive and intuitive.  The ideal  security culture helps a group to safely and easily communicate and grow safely, rather than become overburdened by paranoia or extensive detailed procedures and policies.
 
-While perspepctives and practices vary widely among different groups, some important widespread practices are: (1) share information on a need-to-know basis; (2) minimize personal information that needs to be shared; (3) try to get to know the people you organize with as well as possible; (4) never brag about past actions or spread rumors.  Let's explore some of these elements in detail.  
+While perspepctives and practices vary widely among different groups, some important widespread practices are: (1) share information on a need-to-know basis; (2) minimize the sharing of personal information; (3) get to know the people you organize with as well as possible; (4) never brag about past actions or spread rumors.  Let's explore some of these elements in detail.  
 
-#### Need to Know
+#### Need-to-know: minimize information sharing
 
-#### Minimal personal info
+The first principle of keeping secrets is to minmize the number of people who need to be trusted to keep them.  Of course, there is a spectrum of information sensitvity, from public announcements to open meetings, from in-development press releases to specific direct action plans.  Deciding what information needs to be protected is only part of the picture; equally, people involved in direct action social movements need to be comfortable
 
-#### Vetting vs. Trust Building
+rust the fewest possible parties.
+
+#### Minimize personal information
+
+Analogy to Metadata protection.
+
+#### Vetting and trust building
+
+Build trust over time.
 
 #### Bragging and gossip
 
-#### Related: Public oversharing on social media platforms can negate security efforts
+Authenticity of information.
+
+#### Related: Public oversharing on social media platforms negates digital security efforts
 
 ### Tiers of security?
 
 Arguments for and against.
 
-####
+### Trusting technology
 
+Trust Criteria
+
+* MUST-HAVES
+**  Open Source Client
+**   End-to-End Encryption
+**    Contact Authentication
+**   Cross-Platform
+**    Signed App/Package/Download
+            notes on trust
+**    Active/Responsive Developer(s)
+
+* NICE-TO-HAVES
+
+** Social
+
+***    Funding Source
+***    Free to Use
+        is this relevant?
+***    Movement oriented
+***    Warrant Canary
+***    Anonymous accounts possible
+***    Doesn't unnecessarily map social networks
+
+** Technical
+
+***    Security Audit - how important?
+        not essential? (comment by whonix dev)
+***    Anonymity (TOR-compatible)
+***    Minimal Hardware Requirements
+***    Free Software License
+***    Open Source Server
+***    Federated (decentralized)
+***    Reproducible Builds
+
+### Minimizing trust in technology
+
+The security culture principle of minimizing the number of trusted parties...
+
+### Limits of technology -- endpoint security
+
+* Closed source:
+    ** hardware
+    ** firmware
+    ** microcode
+    ** drivers
+* Compiler bugs
+* Zero days
 
 ### What you can do
 
-* from MG's post?
+* from CLDC posts
 * limit how much you post online, consider your privacy settings and geolocation settings (but understand that the policies of the companies that hold your data can change)
+* Meet in person to share crucial/high-risk info
+* Use obfuscation in addition to encryption for crucial/high-risk info that must be shared online
+
 
 ### What does this protect me from? 
 
