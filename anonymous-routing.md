@@ -24,7 +24,7 @@ Virtual Private Network (VPN) technology began as a means to extend a local netw
 
 A VPN operates as a (hopefully benign) middle man.  Rather than sending all her web requests directly, Assata sends all her web requests to her VPN, the VPN sends fetches her request from the Internet for her, and then the VPN sends the results back to Assata.  The specifics of how this is done vary between different VPN services, but generally the communications between you and the VPN are encrypted.  The protective quality of a VPN relies on many other people also connecting to that VPN.  An eavesdropper looking at communications to and from the VPN will be able to identify the individuals connecting to the VPN and the web requests the VPN is fetching, but ideally will be unable to match those web requests with the corresponding users.
 
-![Virtual Private Networks](pictures/anonymous-browsing-vpn.jpeg "Virtual Private Networks")
+![Virtual Private Networks](pictures/anonymous-browsing-vpn.png "Virtual Private Networks")
 
 Of course, the VPN provider knows all of your Internet behavior, and with their cooperation, an adversary would too.  That is, you are trusting your VPN provider with that information.  However, your ISP (without using a VPN) has access to the same information, but your ISP does not conceal your IP address from destination servers (e.g. web, email, etc.) on the Internet.  That is, you are putting the same trust in your VPN provider as you must in your ISP.  Some increased privacy risk, however, comes with using the same VPN across many locations, giving a single entitiy (that VPN) a more complete view of your Internet use than available to the ISP at each location.
 
@@ -34,11 +34,13 @@ The Onion Router, or Tor, is a means of accessing the Internet anonymously while
 
 ![Tor](pictures/anonymous-browsing-tor.png "Tor")
 
-The way this is done is by Diffie-Hellman key exchanges first with the entry node, then with the relay node and finally with the exit node as follows.  First, you establish a cryptographic key that you share with the entry node (which we will call the entry key).  This establishes an encrypted communication channel between you and the entry node.  Then you use this encrypted channel to communicate with the relay node via the entry node.  The traffic between the entry and relay nodes is not encrypted, but you use the channel via the entry node to establish establish a cryptographic key that you share with the relay node (the relay key).  All that the relay node knows is that it is setting up a shared key with *some* Tor user, but not the identity of that Tor user.  This process is repeated to establish an encryption key that you share with the exit node (the exit key).
+The way this is done is by Diffie-Hellman key exchanges first with the entry node, then with the relay node and finally with the exit node as follows.  First, you establish a cryptographic key that you share with the entry node (which we will call the entry key).  This establishes an encrypted communication channel between you and the entry node.  Then you use this encrypted channel to communicate with the relay node via the entry node.  The traffic between the entry and relay nodes is not encrypted, but you use the channel via the entry node to establish a cryptographic key that you share with the relay node (the relay key).  All that the relay node knows is that it is setting up a shared key with *some* Tor user, but not the identity of that Tor user.  This process is repeated to establish an encryption key that you share with the exit node (the exit key).
+
+![How Tor establishes keys using rounds of Diffie-Hellman](pictures/anonymous-browsing-TOR-1-keyexchange.png)
 
 In order to send a web request, you first encrypt the request with the exit key, then the relay key and finally the entry key.
 
-![How Tor establishes keys using rounds of Diffie-Hellman](pictures/anonymous-browsing-tor-keys.jpeg "How Tor establishes keys using rounds of Diffie-Hellman")
+![How data traverses the Tor network](pictures/anonymous-browsing-TOR-2-data-transfer.png)
 
 In order to recreate your path through the Tor network and therefore your web request, your adversary would need to control all three nodes that you select as your entry, relay and exit nodes.  An adversary controlling 80% of the Tor network would only have a 50% chance of controlling all three nodes that you select.  Since there are thousands of Tor nodes (that anyone can volunteer to operate), this is unlikely.
 

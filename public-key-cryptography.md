@@ -21,7 +21,7 @@ Encryption protocols can be classified by two major types.  In *symmetric key cr
 
 Suppose Bobby wants to send Assata an encrypted message.  Assata creates a private key, public key pair and sends Bobby her public key (over an insecure channel).  Bobby uses the public key to create the ciphertext and sends the ciphertext to Assata.  The ciphertext can *only* be decrypted using Assata's private key.  Even though anyone may have Assata's public key, the *only* thing that can be done with the public key is encrypt messages which can only be decrypted using Assata's private key.  Security is therefore achieved by keeping the private key private: secret and secure.
 
-![Generating public and private keys and sharing a public key, encrypting with a public key and decrypting with a private key](pictures/public-key-cryptography-key-gen-share.jpeg "Generating public and private keys and sharing a public key, encrypting with a public key and decrypting with a private key")
+![Generating public and private keys and sharing a public key, encrypting with a public key and decrypting with a private key](pictures/public-key-cryptography-key-gen-share.png "Generating public and private keys and sharing a public key, encrypting with a public key and decrypting with a private key")
 
 In this model, anyone can in fact publish their public key.  For example, Assata could publish her public key online so that anyone wishing to send Assata an encrypted message could encrypt that message with her public key first.  Likewise, Bobby could create his own pair of public and private keys and publish his public key online so that others could send him encrypted messages that only Bobby could decrypt with his (securely stored) private key.
 
@@ -33,9 +33,13 @@ Let's revisit Diffie-Hellman key exchange through the lens of symmetric and publ
 
 Public key encryption is usually more computationally expensive than symmetric key encryption.  To achieve the same security guarantees (against, for example, brute force and other attacks), public keys need to be much longer than symmetric keys.  Also, performing the encryption itself takes longer using public keys than symmetric keys.  There is also the problem that, the longer you use a key for encryption, the more ciphertext examples there are to try and use attempts at breaking the encryption (other than brute force) -- that is, keys tend to *age poorly*.
 
-For these reasons, public keys are generally used to encrypt a symmetric key for a given (communication) *session*.  Suppose Bobby wishes to send Assata an encrypted message.  Bobby generates a symmetric encryption key k and encrypts the message with k using a symmetric cipher.  He then *encrypts k* using Assata's public key.  He sends the encrypted message and the encrypted key to Assata.  Assata decrypts the encrypted key using her private key and then uses the result to decrypt the encrypted message.
+For these reasons, public keys are generally used to encrypt a symmetric key for a given (communication) *session*.  Suppose Bobby wishes to send Assata an encrypted message.  Bobby generates a symmetric encryption key k and encrypts the message with k using a symmetric cipher.  He then *encrypts k* using Assata's public key.  He sends the encrypted message and the encrypted key to Assata.  
 
-![Combining symmetric and public key cryptography](pictures/public-key-cryptography-session.jpeg "Combining symmetric and public key cryptography")
+![Combining symmetric and public key cryptography--encrypting](pictures/pubkeycrypto-split1-encrypt.png)
+
+Assata decrypts the encrypted key using her private key and then uses the result to decrypt the encrypted message.
+
+![Combining symmetric and public key cryptography--decrypting](pictures/pubkeycrypto-split2-decrypt.png)
 
 Since the public key is only used to encrypt keys (which are typically random-looking strings), the public key does not age, because methods of breaking the encryption that rely on human-language phrases would fail.  An added benefit is that if one message is successfully decrypted, that does not help in breaking the encryption of a different message, since each message is encrypted with a different key.
 

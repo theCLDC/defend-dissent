@@ -19,7 +19,7 @@ Communications through the Internet can be eavesdropped in many places: at the w
 
 First, lets consider a physical example.  Suppose Assata wants to send Bobby a package.  She puts it in a strong box with a large clasp that can take multiple locks.  She puts a lock on the box, but Bobby doesn't have a key to the lock.  Assata mails the box to Bobby, who cannot open it (and neither can anyone else while the box is in transit).  Bobby puts his own lock on the box, a lock that Assata doesn't have the key to.  The box cannot be opened in transit - an eavesdropper would have to break Assata's lock or Bobby's lock.  When Assata receives the box, she removes her lock and sends the box back to Bobby.  Now Bobby can open the box because it is only secured with his lock.
 
-![Exchanging a secure message without sharing a key](pictures/key-exchange-lock-box.jpeg "Exchanging a secure message without sharing a key")
+![Exchanging a secure message without sharing a key](pictures/lockbox.png "Exchanging a secure message without sharing a key")
 
 This illustrates that it is possible to send something securely without meeting first to exchange (agree on) a key.  However, we aren't about to start physically mailing lock-boxes in order exchange encryption keys.  What we need is a mathematical version of this that we can use for digital communications.
 
@@ -53,7 +53,7 @@ Note that, in this example, Assata did not share her key (`ALDO`) with anyone an
 
 In modern cryptographic systems, rather than sending the entire message back and forth with different layers in this way, one has an initial exchange, much like in the above examples, to settle on a key to use for the intended communication. You could imagine that Assata, rather than sending the message ```AT ONE TIME IN THE WORLD...```, sent an encryption key to use for a longer communication.  We will describe the mathematical basis for key exchange as it is used by almost all modern communication, called "Diffie-Hellman key exchange".
 
-<a title="By Lorddota (Own work) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ADiffie-Hellman_Key_Exchange-modified.png"><img width="512" alt="Diffie-Hellman Key Exchange-modified" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Diffie-Hellman_Key_Exchange-modified.png/512px-Diffie-Hellman_Key_Exchange-modified.png"/></a>
+![Crafting a shared secret, in paints.  Thanks to Lorddota https://commons.wikimedia.org/wiki/File%3ADiffie-Hellman_Key_Exchange-modified.png CC BY-SA 4.0](pictures/diffie-hellman-concept.png)
 
 First, let's see how this is done with paints instead of mathematics.  We will assume that if you mix two colors of paint together, you can't unmix them: specifically, even if you know what one of the two colors was, you can't figure out what color was mixed with it to get the resulting mixed color.
 
@@ -65,7 +65,7 @@ Now, to the paint sample received from Bobby, Assata mixes in 10mL of her secret
 
 Again, we need a way to do this mathematically.  We do so with a commutative mathematical operation that is hard or impossible to reverse.  A mathematical operation or function that is hard to reverse is called a one-way function. Let's represent our mathematical operation with the symbol &#x2606;.  That is, a&#x2606;b = c for some numbers a, b, and c.  Commutative means that a&#x2606;b = b&#x2606;a.  That &#x2606; is one-way means that if you know b and c, you cannot easily figure out what a is.  In practice, one should only be able to figure out what a is by a brute force (or close to brute force) attack: by trying every possibility for a.  You may think of &#x2606; as multiplication (which is commutative but is *not* one way).  (For those mathematically inclined, &#x2606; can be modular exponentiation for real implementations of Diffie-Hellman.)
 
-![Agreeing on a secret key](pictures/key-exchange-paint-with-math.png "Agreeing on a secret key")
+![Agreeing on a secret key](pictures/diffie-hellman.png "Agreeing on a secret key")
 
 In the above, Assata and Bobby agree on a number p which is public.  Assata chooses a secret number a, computes p&#x2606;a and sends the result to Bobby.  Since &#x2606; is one-way, an eavesdropper will know p and p&#x2606;a, but will not be able to (easily) determine a. Bobby chooses a secret number b, computes p&#x2606;b and sends the result to Assata. An eavesdropper knows p&#x2606;b, but not b. Assata computes (p&#x2606;b)&#x2606;a, using the message from Bobby and her own secret number. Bobby computes (p&#x2606;a)&#x2606;b, using the message from Assata and his own secret number.  Since &#x2606; is commutative (p&#x2606;b)&#x2606;a=(p&#x2606;a)&#x2606;b and so Assata and Bobby now have computed a common number.  Since the eavesdropper only knows p&#x2606;a, p&#x2606;b, and p, and since &#x2606; is one-way, the eavesdropper has no efficient means of computing Assata and Bobby's shared common number: it is secret to Assata and Bobby.  Assata and Bobby can use this shared number as their cryptographic key.
 

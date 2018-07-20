@@ -19,9 +19,9 @@ While perspepctives and practices vary widely among different groups, some impor
 
 #### Need-to-know: minimize information sharing
 
-The first principle of keeping secrets is to minmize the number of people who need to be trusted to keep them.  Of course, there is a spectrum of information sensitvity, from public announcements to open meetings, from in-development press releases to specific direct action plans.  Deciding what information needs to be protected is only part of the picture; equally, people involved in direct action social movements need to be comfortable
+The first principle of keeping secrets is to minmize the number of people who need to be trusted to keep them.  Of course, there is a spectrum of information sensitvity, from public announcements to open meetings, from in-development press releases to specific direct action plans.  Deciding what information needs to be protected is only part of the picture; equally, people involved in direct action social movements need to be comfortable not having access to information they don't need to do their work.
 
-rust the fewest possible parties.
+* trust the fewest possible parties.
 
 #### Minimize personal information
 

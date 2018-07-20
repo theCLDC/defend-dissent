@@ -23,7 +23,7 @@ Recall that Assata was able to send Bobby a secure package by sending a lock box
 
 Suppose Edgar intercepts the lock box from Assata to Bobby with Assata's lock on it. Edgar could send the lock box back to Assata with his own lock on it.  Unless Assata is able to tell the difference between a lock from Edgar and a lock from Bobby, Assata would assume that the lock is Bobby's lock, remove her lock and send the package on to Bobby.  If Edgar intercepts the package again, he can now open the box and examine the contents of the package since it only has his lock on it.  For Edgar to do this, he must intercept all the packages being sent from Assata to Bobby.  This attack on Assata's communication with Bobby is called an *impersonation attack*: Edgar is impersonating Bobby.  (This is not generally considered a man-in-the-middle attack.)
 
-![An impersonation attack](pictures/man-in-the-middle-lock-box-impersonation.jpeg "An impersonation attack")
+![An impersonation attack](pictures/mitm-impersonation.png "An impersonation attack")
 
 In the situation as described, Bobby never received a package at all.  Edgar could go further though.  Edgar could, after opening the lock box from Assata, choose to send it along to Bobby, using the same three-exchange method, so that Bobby thinks he is receiving a locked box from Alice.  This is called a *passive man-in-the-middle* attack. (Note: Edgar would need to make it seem that the package is coming from Assata, so would need to intercept the return package from Bobby to Assata that would have Bobby and Edgar's lock on it.)
 
@@ -31,7 +31,7 @@ Or Edgar could substitute the package with a completely different package.  This
 
 These types of attacks are called a man-in-the-middle attack because Edgar is the man in the middle of Assata and Bobby's communication.  (In the case of J. Edgar Hoover, quite literally "the man".)
 
-![A man-in-the-middle attack](pictures/man-in-the-middle-lock-box-attack.jpeg "A man-in-the-middle attack")
+![A man-in-the-middle attack](pictures/mitm.png "A man-in-the-middle attack")
 
 ### A man-in-the-middle attack against Diffie-Hellman key exchange
 
@@ -41,7 +41,7 @@ Suppose, though, that Edgar is able to intercept Assata and Bobby's communicatio
 
 When Assata and Bobby start using what they think is their shared key, Edgar will have to keep up their ruse if they don't want to be discovered.  You see, Assata will encrypt a message with the key she has.  If this message makes it to Bobby, Bobby won't be able to decrypt the message because he doesn't have the same key!  What Edgar needs to do is intercept the encrypted message and decrypt it with the key they share with Assata.  They now have two choices.  They could simply read the message, encrypt it with the key they share with Bobby and then send it to Bobby.  This would be a *passive* man-in-the-middle attack: Edgar is reading the messages between Assata and Bobby that Assata and Bobby think no-one else can read.  Edgar's other option is to change the message from Assata, encrypt it with the key they share with Bobby and then send it to Bobby.  This would be an *active* man-in-the-middle attack.  In either case, Edgar must continually intercept communications between Assata and Bobby, beacause otherwise one of them will receive a message encrypted with a key they don't have, which would alert them to the man-in-the-middle.
 
-![A man-in-the-middle attack against the Diffie-Hellman key exchange](pictures/man-in-the-middle-diffie-hellman.jpeg "A man-in-the-middle attack against the Diffie-Hellman key exchange")
+![A man-in-the-middle attack against the Diffie-Hellman key exchange](pictures/dhe-mitm.png "A man-in-the-middle attack against the Diffie-Hellman key exchange")
 
 ### Spotting a man-in-the-middle attack with cryptographic hashes: Fingerprinting
 
@@ -70,7 +70,7 @@ There are two methods to compare keys in band that are not commonly used, but ar
 
 The first relies on the use of a weak password.  If Assata and Bobby both know something, like the name of Assata's first pet or the street Bobby grew up on (say "goldman"), that their presumed adversary doesn't know, Assata and Bobby can use this as a weak password.  Assata combines her key ("key-a") with the weak password ("goldman"), and computes the cryptographic hash of the result.  Bobby does the same thing with his key ("key-b").  Assata and Bobby then compare the result *in band* (i.e. over the communication channel in which they are already communicating).  Because of the properties of the cryptographic hash, Assata and Bobby will only have the same result if they have the same key and the same password.  If Edgar is playing the man in the middle, then they share a key with Assata and a different key with Bobby.  Edgar would have to risk passing along Assata's hash or would have to guess the weak password to be able to compute a result that is the same as what Assata computes and the same as what Bobby computes (as in the figure below).  The password does not need to be strong because only a small number of guesses would be tolerated between Assata and Bobby before they assume the man is in the middle: a brute force attack by Edgar to guess the password is not feasible.
 
-![Fingerprinting to uncover a man-in-the-middle attack](pictures/man-in-the-middle-in-band-fingerprinting.jpeg "Fingerprinting to uncover a man-in-the-middle attack")
+![Fingerprinting to uncover a man-in-the-middle attack](pictures/fingerprinting.png "Fingerprinting to uncover a man-in-the-middle attack")
 
 The second method is used for key comparison in voice and video calls.  Here, Assata hashes her key into two human-readable words (instead of a string of numbers and characters as usual).  Bobby does the same thing.  If Assata and Bobby have the same key (i.e. there is no man in the middle), then they will have the same set of words.  Assata reads the first word and Bobby reads the second word, so each can compare the result of the hash.  If Edgar is in the middle, Assata and Bobby would have different pairs of words.  Edgar would have to synthesize Assata and Bobby's voice (and possibly video) to speak the words that Edgar shares with each of Assata and Bobby in order for Edgar's ruse to continue.
 
