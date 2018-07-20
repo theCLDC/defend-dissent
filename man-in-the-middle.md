@@ -41,7 +41,7 @@ Suppose, though, that Edgar is able to intercept Assata and Bobby's communicatio
 
 When Assata and Bobby start using what they think is their shared key, Edgar will have to keep up their ruse if they don't want to be discovered.  You see, Assata will encrypt a message with the key she has.  If this message makes it to Bobby, Bobby won't be able to decrypt the message because he doesn't have the same key!  What Edgar needs to do is intercept the encrypted message and decrypt it with the key they share with Assata.  They now have two choices.  They could simply read the message, encrypt it with the key they share with Bobby and then send it to Bobby.  This would be a *passive* man-in-the-middle attack: Edgar is reading the messages between Assata and Bobby that Assata and Bobby think no-one else can read.  Edgar's other option is to change the message from Assata, encrypt it with the key they share with Bobby and then send it to Bobby.  This would be an *active* man-in-the-middle attack.  In either case, Edgar must continually intercept communications between Assata and Bobby, beacause otherwise one of them will receive a message encrypted with a key they don't have, which would alert them to the man-in-the-middle.
 
-![A man-in-the-middle attack against the Diffie-Hellman key exchange](pictures/man-in-the-middle-diffie-hellman.jpeg "A man-in-the-middle attack against the Diffie-Hellman key exchange")
+![A man-in-the-middle attack against the Diffie-Hellman key exchange](pictures/dhe-mitm.png "A man-in-the-middle attack against the Diffie-Hellman key exchange")
 
 ### Spotting a man-in-the-middle attack with cryptographic hashes: Fingerprinting
 
