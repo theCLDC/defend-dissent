@@ -53,7 +53,7 @@ US export regulations regarding cryptography remain in force, but were liberaliz
 
 #### What to learn next
 
-* [Crytographic signing.](cryptographic-signing.md)
+* [Crytographic signing.](authenticity.md)
 
 #### External resources
 
