@@ -11,7 +11,7 @@
 
 ### Overview
 
-Using Tor it is possible to conceal your identity online from [most adversaries](threat-overview.md) and even enjoy significant protection against a [nation-state level adversary](threat-state.md), with only a few known exceptions.  There are important warnings and caveats, however: **remember, unless you cannot avoid it, never entrust your life or freedom entirely to** ~~a complex machine you cannot fully control~~ **a computer**.
+Using Tor it is possible to conceal your identity online from [most adversaries](threat-overview.md) and even enjoy significant protection against a [nation-state level adversary](threat-state.md), with only a few known exceptions.  There are important warnings and caveats, however: **remember, unless you cannot avoid it, never entrust your life or freedom entirely to** ~~a complex machine you noone fully understands let alone can control~~ **a computer**.
 
 ### Warning: Situations in which Tor cannot protect you
 

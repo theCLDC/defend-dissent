@@ -2,18 +2,24 @@
 
 > We recommend that you read ???? before reading this section.
 
+
+
+<!--transform this section into a case study: Signal.-->
+
+
+
 #### What you'll learn
 
 1. TODO
 
 ### What the infrastructure looks like
 
-* tactical tech figure
+* tactical tech figure - https://holistic-security.tacticaltech.org/ckeditor_assets/pictures/25/content_datamotion.png
 * phone communications also go through the same or similar networks
 
 ### What you can do
 
-* secure communications 
+* secure communications
 * strong passwords
 
 ### What you can't do

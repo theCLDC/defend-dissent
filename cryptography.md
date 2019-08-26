@@ -8,7 +8,7 @@ Consider perhaps the simplest cipher, called the _Caesar cipher_ wherein each le
 
 ```
 IF VOTING CHANGED ANYTHING IT WOULD BE ILLEGAL
-``` 
+```
 
 by shifting each letter in the alphabet forward by three places, so that `A` becomes `D`, `B` becomes `E` and so on, with `Z` wrapping back through the start of the alphabet to become `C`. Then the plaintext gets encrypted to the following _ciphertext_:
 

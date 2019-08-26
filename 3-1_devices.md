@@ -1,10 +1,8 @@
 ## The data you keep with you: protect your devices
 
-> We recommend that you read about [modern cryptography](modern-cryptography.md) and about what makes a good password [[link to section on properties of good passwords]] before reading this section.
+> We recommend that you read about [modern cryptography](modern-cryptography.md) and about what makes a good [password](passwords.md) before reading this section.
 
 #### What you'll learn
-
-1. TODO
 
 ---
 
@@ -46,16 +44,16 @@ Many malware products require phishing for installation on the target's device: 
 
 Finally, be wary of the apps you install and what permissions you grant them.  Does a flashlight app need access to your contacts and camera?  Do you really need to install that game created by an unknown software creator?  Every app you install is a potential vector for malware, so it is a good opportunity to practice minimalism.
 
-### What you can't do
+### <!--What you can't do-->
 
-* build your own computer/phone
-* trust devices 100%, supply chain manipulation
+* <!--build your own computer/phone-->
+* <!--trust devices 100%, supply chain manipulation-->
 
 
-* What devices look like
-** Is this useful?  maybe incorporate into what you can't do - to talk about closed source nature of cell phones in particular
-** tactical tech cell phone layers
-** compare to laptops/computers
+* <!--What devices look like-->
+<!--** Is this useful?  maybe incorporate into what you can't do - to talk about closed source nature of cell phones in particular-->
+<!--** tactical tech cell phone layers-->
+<!--** compare to laptops/computers-->
 
 
 #### External Resources
