@@ -31,7 +31,7 @@ In practice, rather than encrypting the entire message, one would encrypt a cryp
 
 Assata takes a cryptographic hash of her message and encrypts the result with her private key, creating a signature, which she can attach to the message.  Bobby takes the signature and decrypts it using Assata's public key giving the hash that (hopefully) is the same as what Assata generated.  He then takes his own cryptographic hash of the message and compares the result to what he received from Assata.
 
-![image](../pictures/cryptographic-signing.jpg)
+![image](pictures/cryptographic-signing.jpg)
 
 Recall that cryptographic hash functions are infeasible to counterfeit.  So, if the two hashes that Bobby generates (one directly from Assata's message and one from Assata's signature) are the same then we know two things:
 
@@ -54,13 +54,13 @@ To trust Assata's public key, Bobby should really verify the public key by check
 
 Suppose Cleaver wants to send Assata an encrypted message, and wants to be sure that Edgar is not going to play the man in the middle.  But Cleaver does not have a secondary channel to verify Assata's public key through.  However, Cleaver has received and verified Bobby's public key.  So Bobby can send Assata's public key to Cleaver with his signature.  If Cleaver trusts Bobby, and has verified his public key, then Cleaver can verify his signature on Assata's public key and trust that Assata's public key is genuine.
 
-[TODO FIGURE]
+<!--[TODO FIGURE]-->
 
 This is the basis of the web of trust.  Rather than directly verifying fingerprints of keys, you can do so indirectly, as long as there is a path of trust between you and your desired correspondent.
 
 ### In context: 
 
-COMING SOON!  A tale of a falsified Linux Mint distribution...
+<!--COMING SOON!  A tale of a falsified Linux Mint distribution...-->
 
 #### What to learn next
 

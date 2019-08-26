@@ -23,7 +23,7 @@ This open textbook can be read in linear fashion -- cryptography fundamentals fo
 
 ### Introduction
 
-1. [Scope of this text: social movements, suppression, and the goals of digital security](01_intro.md)
+1. [Scope of this text: social movements, suppression, and the goals of digital security](0-1_intro.md)
 
 ### Part I: Cryptography - Principles & Examples
 1. [What is encryption?](cryptography.md)   
