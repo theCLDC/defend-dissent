@@ -15,7 +15,7 @@ By a physical attack, we mean that your adversary would first gain physical acce
 
 Those who were swept up in the mass arrests during the protests of the presidential inauguration on January 20, 2017 (J20) had their phones confiscated and subject to search by a tool from the Israeli company Cellebrite which extracts all information on a device (phone or computer) and all remote accounts that device has access to (e.g. Google, Facebook, Dropbox).  One J20 defendant described the 8000 pages of data that a Cellebrite tool extracted from his confiscated cell phone; he received this information from his lawyer as they prepared for his defense:
 
-![](../pictures/cellebrite-data-extraction.jpg)
+![](pictures/cellebrite-data-extraction.jpg)
 *From "How to Protect Yourself from the Snitch in Your Pocket", Earth First! The Journal of Ecological Resistance. Winter 2017-18.*
 
 #### What can I do?
@@ -46,14 +46,7 @@ Finally, be wary of the apps you install and what permissions you grant them.  D
 
 ### <!--What you can't do-->
 
-* <!--build your own computer/phone-->
-* <!--trust devices 100%, supply chain manipulation-->
-
-
-* <!--What devices look like-->
-<!--** Is this useful?  maybe incorporate into what you can't do - to talk about closed source nature of cell phones in particular-->
-<!--** tactical tech cell phone layers-->
-<!--** compare to laptops/computers-->
+<!--build your own computer/phone.  trust devices 100%, supply chain manipulation. What devices look like: is this useful?;  maybe incorporate into what you can't do - discuss problems w/ cell phones in particular, baseband and SIM; tactical tech cell phone layers; compare to laptops/computers-->
 
 
 #### External Resources
