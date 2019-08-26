@@ -13,6 +13,7 @@
 1. [Encrypted communications: Signal & Keybase](comms.md)*
 1. [Anonymity online: Tor](tor.md)
 1. [Endpoint security - keep devices up-to-date and physically secure](devices.md)*
+1. [Operational security: digitial security culture](security-culture.md)
 
 ### Conclusion
 

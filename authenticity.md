@@ -29,16 +29,22 @@ These properties are only meaningful if you are the only one who controls your p
 
 In practice, rather than encrypting the entire message, one would encrypt a cryptographic hash (a.k.a. digest or fingerprint) of the message for the purpose of cryptographic signing.  This is done for efficiency reasons.  Let's consider the protocol for Assata signing a message and Bobby verifying the signature, pictured below.
 
-Assata takes a cryptographic hash of her message and encrypts the result with her private key, creating a signature, which she can attach to the message.  Bobby takes the signature and decrypts it using Assata's public key giving the hash that (hopefully) is the same as what Assata generated.  He then takes his own cryptographic hash of the message and compares the result to what he received from Assata.
+Assata takes a cryptographic hash of her message and encrypts the result with her private key, creating a signature, which she can attach to the message.  
 
-![image](pictures/cryptographic-signing.jpg)
+![](/home/user/working/defend-dissent/pictures/pgpsigning1.png)
+
+Bobby takes the signature and decrypts it using Assata's public key giving the hash that is the same as what Assata generated.  He then takes his own cryptographic hash of the message and compares the result to the decrypted hash he received from Assata.
+
+![image](pictures/pgpsigning2.png)
 
 Recall that cryptographic hash functions are infeasible to counterfeit.  So, if the two hashes that Bobby generates (one directly from Assata's message and one from Assata's signature) are the same then we know two things:
 
 1. Only Assata could have generated the signature.  Only Assata could encrypt something that can be decrypted with her public key, since she is the only one with her private key.
-1. The message has not been altered since Assata wrote it.  If someone altered the message, then the result of the hash function would be different and so the alterer would also have to change the signature, but can't generate one without Assata's private key.
+1. The message has not been altered since Assata wrote it.  If someone altered the message, then the  hash of the message would differ from the hash contained in the signature.  Any counterfeiter would therefore have to forge a new signature, but can't generate one without Assata's private key.
 
 Authenticity, cryptographically.
+
+Note that Edgar, in a man-in-the-middle attack, simply remove the signature.  This is where 
 
 ### Applications of cryptographic signing
 
