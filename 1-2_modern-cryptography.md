@@ -12,7 +12,7 @@ sup {
 
 ## Modern cryptography
 
-> We recommend that you read [What is encryption?](cryptography.md) first.
+> We recommend that you read [What is encryption?](1-1_cryptography.md) first.
 
 #### What you'll learn
 
@@ -87,9 +87,9 @@ Turing's work during the war has been estimated to shorten the war by more than 
 
 #### What to learn next
 
-* [Key exchange: How to agree on a cryptographic key over the Internet](key-exchange.md)
-* [Passwords](passwords.md)
-* [Public key cryptography](public-key-cryptography.md)
+* [Key exchange: How to agree on a cryptographic key over the Internet](1-3_key-exchange.md)
+* [Passwords](1-6_passwords.md)
+* [Public key cryptography](1-7_public-key-cryptography.md)
 
 #### External resources
 

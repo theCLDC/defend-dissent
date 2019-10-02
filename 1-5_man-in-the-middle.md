@@ -4,7 +4,7 @@ encoding: "utf-8"
 
 ## How the man in the middle can foil your crypto, and what you can do about it.
 
-> We recommend that you read [Key exchange: How to agree on a cryptographic key over the Internet](key-exchange.md) and [Cryptographic hashes](cryptographic-hash.md) before reading this section.
+> We recommend that you read [Key exchange: How to agree on a cryptographic key over the Internet](1-3_key-exchange.md) and [Cryptographic hashes](1-4_cryptographic-hash.md) before reading this section.
 
 #### What you'll learn
 
@@ -15,7 +15,7 @@ encoding: "utf-8"
 
 ---
 
-In [Key exchange](key-exchange.md) you learned how two people can agree on a cryptographic key, even if they have not met.  While this is a robust method, it suffers from the limitation that, on the Internet, it is difficult to be sure that you are communicating with the person or entity you are trying to communicate with, be that a friend you are instant messaging or emailing, or the server that you are trying to load a webpage from.  We will first show how an eavesdropper can intercept your communications with our lock-box example from [Key exchange](key-exchange.md), and then show how this plays out in a Diffie-Hellman key exchange.  These interceptions of communications are called attacks.
+In [Key exchange](1-3_key-exchange.md) you learned how two people can agree on a cryptographic key, even if they have not met.  While this is a robust method, it suffers from the limitation that, on the Internet, it is difficult to be sure that you are communicating with the person or entity you are trying to communicate with, be that a friend you are instant messaging or emailing, or the server that you are trying to load a webpage from.  We will first show how an eavesdropper can intercept your communications with our lock-box example from [Key exchange](1-3_key-exchange.md), and then show how this plays out in a Diffie-Hellman key exchange.  These interceptions of communications are called attacks.
 
 ### A physical man-in-the-middle attack
 
@@ -35,7 +35,7 @@ These types of attacks are called a man-in-the-middle attack because Edgar is th
 
 ### A man-in-the-middle attack against Diffie-Hellman key exchange
 
-Let's see how this plays out in the Diffie-Hellman key exchange, using the notation we introduced in [Key exchange](key-exchange.md).  Recall that in order for Assata and Bobby to generate a key, they first agree on a number p.  Assata picks a number a, computes p&#x2606;a, and sends the result to Bobby.  Bobby picks a number b, computes p&#x2606;b, and sends the result to Assata.  Assata and Bobby (and no-one else) can now compute p&#x2606;a&#x2606;b, which they use as their cryptographic key for their encrypted communication.
+Let's see how this plays out in the Diffie-Hellman key exchange, using the notation we introduced in [Key exchange](1-3_key-exchange.md).  Recall that in order for Assata and Bobby to generate a key, they first agree on a number p.  Assata picks a number a, computes p&#x2606;a, and sends the result to Bobby.  Bobby picks a number b, computes p&#x2606;b, and sends the result to Assata.  Assata and Bobby (and no-one else) can now compute p&#x2606;a&#x2606;b, which they use as their cryptographic key for their encrypted communication.
 
 Suppose, though, that Edgar is able to intercept Assata and Bobby's communications.  Then Edgar can do one Diffie-Hellman key exchange with Assata and another Diffie-Hellman key exchange with Bobby.  Assata will think that she doing a Diffie-Hellman key exchange with Bobby, when really she is exchanging keys with Edgar.  Bobby will think that he doing a Diffie-Hellman key exchange with Assata, when really he is exchanging keys with Edgar.  At the end, Assata and Edgar have a shared key and Edgar and Bobby have a shared key.  But Assata and Bobby think that they have a shared key with each other.
 
@@ -57,7 +57,7 @@ Well, cryptographic keys, for modern cryptographic methods, are very long - 100s
 
 *But then isn't it cumbersome to compare keys if they are so long?*
 
-Absolutely.  So, instead of comparing the entire key, Assata and Bobby compare the [cryptographic hashes](cryptographic-hash.md) of their keys.  Remember the following properties of the cryptographic hash:
+Absolutely.  So, instead of comparing the entire key, Assata and Bobby compare the [cryptographic hashes](1-4_cryptographic-hash.md) of their keys.  Remember the following properties of the cryptographic hash:
 1. It makes the input (in this case the key) much shorter (say, a few dozen characters).
 1. It is next to impossible to find two inputs (in this case two keys) that have the same output hash, so Edgar certainly can't manage to do a Diffie-Hellman key exchange with each of Assata and Bobby so that the hashes end up the same.
 1. It cannot be reversed, so if someone intercepted the hash, they could not recreate the input (in this case, the key).
@@ -82,7 +82,7 @@ Of course, for users at risk of targeted surveillance, fingerprinting is essenti
 
 #### What to do when you can't fingerprint
 
-In many modes of communication, fingerprinting isn't feasible.  One example is in accessing a website via HTTPS.  In using HTTPS, your browser and the website's server will generate a cryptographic key via a Diffie-Hellman key exchange.  However, it isn't practical for users to contact the servers of websites via alternate communication channels to fingerprint keys before accessing the content of webpages,  Of course you don't know the voice of the operator of the web server nor share any common knowledge to use in-band comparison methods, either!  In this case, alternate methods of validating keys, using [public key cryptography](public-key-cryptography.md) and [certificate authorities](certificate-authorities.md) are used.
+In many modes of communication, fingerprinting isn't feasible.  One example is in accessing a website via HTTPS.  In using HTTPS, your browser and the website's server will generate a cryptographic key via a Diffie-Hellman key exchange.  However, it isn't practical for users to contact the servers of websites via alternate communication channels to fingerprint keys before accessing the content of webpages,  Of course you don't know the voice of the operator of the web server nor share any common knowledge to use in-band comparison methods, either!  In this case, alternate methods of validating keys, using [public key cryptography](1-7_public-key-cryptography.md) and [certificate authorities](certificate-authorities.md) are used.
 
 ### In context: The Great Firewall of China
 

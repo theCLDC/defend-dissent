@@ -1,6 +1,6 @@
 ## Anonymous routing
 
-> We recommend that you read about [metadata](meta-data.md), [exchanging keys](key-exchange.md), and [end-to-end encryption](end-to-end-encryption.md) before reading this section.
+> We recommend that you read about [metadata](1-9_metadata.md), [exchanging keys](1-3_key-exchange.md), and [end-to-end encryption](end-to-end-encryption.md) before reading this section.
 
 #### What you'll learn
 
@@ -14,7 +14,7 @@ In order to communicate online, packets of information need to be addressed to y
 
 Your IP address is just one piece of meta-data that is necessary in order to get information to your computer.  When browsing the web, though, a lot of other meta-data, while not strictly necessary, is transmitted to "maximize your browsing experience".  This information includes details such as what browser plugins you use, your time zone, and your screen size, and can be used as a unique identifier across IP addresses that you use to connect to the Internet.
 
-Who has access to all this meta-data which can be used to identify you?  Without encryption, such as using [https](modern-cryptography.md#Security-is-provided-by-distrusting-the-infrastructure), any eavesdropper would have access to this meta-data, as well as the content.  Encryption will protect some meta-data from eavesdroppers, but not your IP address and not necessarily the web domains you are visiting.  And of course, the servers of the websites you are visiting will have access to your meta-data, as well as any content.  Your ISP will also have access to all of the meta-data and unencrypted content that they help you receive.
+Who has access to all this meta-data which can be used to identify you?  Without encryption, such as using [https](1-2_modern-cryptography.md#Security-is-provided-by-distrusting-the-infrastructure), any eavesdropper would have access to this meta-data, as well as the content.  Encryption will protect some meta-data from eavesdroppers, but not your IP address and not necessarily the web domains you are visiting.  And of course, the servers of the websites you are visiting will have access to your meta-data, as well as any content.  Your ISP will also have access to all of the meta-data and unencrypted content that they help you receive.
 
 But since meta-data is used to get information to you, is there any way to protect this meta-data, and who could you protect it from?  We describe two ways to anonymize your web browsing.
 
@@ -65,7 +65,7 @@ Of course, anonymous browsing technologies would have protected the IP addresses
 #### What to learn next
 
 * [Practical uses of Tor and modes of anonymity](tor.md#Uses-of-Tor)
-* [Overview of digital threats to social movements](threat-overview.md)
+* [Overview of digital threats to social movements](2-02_digital-threats.md)
 
 #### External resources
 

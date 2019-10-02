@@ -1,6 +1,6 @@
 ## Passwords
 
-> We recommend that you read about [cryptographic hash functions](cryptographic-hash.md) before reading this section.
+> We recommend that you read about [cryptographic hash functions](1-4_cryptographic-hash.md) before reading this section.
 
 #### What you'll learn
 
@@ -25,7 +25,7 @@ To crack one password, an adversary could do so via the same means that you ente
 
 An adversary could also physically access the device (your phone or computer) on which you enter your password. More likely, and as is regularly reported in the news, the server on which your password is stored is compromised or hacked. In this case, if won't just be your username and password that is compromised, but everyone who has an account on that system. Although an adversary who has gained access to a database of passwords on the server will likely have access to your account information too, as we pointed out above, the point of the hack might not be to gain access to the hacked service, but another service entirely.
 
-A responsible web service provider won't store your password in plaintext on their server, but will store a [cryptographic hash](cryptographic-hash.md) of your password.  To uncover a password or all passwords, an adversary computes the cryptographic hash of a guessed password and compares this to the database of stolen passwords.  In practice, password cracking tools (for example, [John the Ripper](https://en.wikipedia.org/wiki/John_the_Ripper)) use three techniques:
+A responsible web service provider won't store your password in plaintext on their server, but will store a [cryptographic hash](1-4_cryptographic-hash.md) of your password.  To uncover a password or all passwords, an adversary computes the cryptographic hash of a guessed password and compares this to the database of stolen passwords.  In practice, password cracking tools (for example, [John the Ripper](https://en.wikipedia.org/wiki/John_the_Ripper)) use three techniques:
 1. Dictionary attacks: Trying dictionary words, common *salts* of dictionary words (e.g. `pa55w0rd`, `fr33d0m`), and previously cracked passwords.
 1. Brute force: Trying all possible combinations of letters and numbers of symbols.  For practical reasons, this method only works for relatively short passwords.
 1. Pre-computed hashed: Comparing against a table of cryptographic hashes of possible passwords that are computed ahead of time.
@@ -65,7 +65,7 @@ In 2016, long-time activist DeRay McKesson had his Twitter account and two email
 
 #### What to learn next
 
-* [Public key cryptography.](public-key-cryptography.md)
+* [Public key cryptography.](1-7_public-key-cryptography.md)
 
 #### External resources
 

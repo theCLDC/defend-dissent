@@ -1,6 +1,6 @@
 ## Metadata
 
-> We recommend that you read [Modern Cryptography](modern-cryptography.md) before reading this section.
+> We recommend that you read [Modern Cryptography](1-2_modern-cryptography.md) before reading this section.
 
 #### What you'll learn
 
@@ -24,7 +24,7 @@ The NSA has referred to, in an internal document, as metadata being one of the a
 When you visit a website, information is being sent between your computer and the server of the website through the Internet. At a basic level, a message is sent from your computer to the server requesting the contents of the website and then the contents of the website are sent from the server to your computer.  The information being sent over the Internet is often referred to as *traffic*, and any message being sent will actually be broken up into many shorter messages or *packets*. Each packet has three main parts:
 * The **header** includes the Internet address of the sender and the receiver (e.g. your computer and the website's server) and a description of the type of data that is being sent (e.g. html).
 * The **data** is the content of the message (e.g. the content of the webpage, or part of the webpage).
-* The **trailer**  indicates end of packet and provides proof that the packet has not been corrupted in transit (using a hash function, which we describe in [Cryptographic Hash Functions](cryptographic-hash.md)).
+* The **trailer**  indicates end of packet and provides proof that the packet has not been corrupted in transit (using a hash function, which we describe in [Cryptographic Hash Functions](1-4_cryptographic-hash.md)).
 
 The metadata is composed of the header and the trailer.  The header is difficult to protect or conceal because it indicates where a packet should be sent.  Just like sending a letter, an address is needed for delivery.  Your Internet address, or IP address, is related to your physical location; in fact, often your physical location can be determined from you IP address.
 
@@ -36,7 +36,7 @@ In May 2017, Reality Winner disclosed NSA documents reporting on Russian interfe
 
 #### What to learn next
 
-* How to conceal your Internet traffic metadata using a [Virtual Private Network or Tor](anonymous-routing.md).
+* How to conceal your Internet traffic metadata using a [Virtual Private Network or Tor](1-10_anonymous-routing.md).
 
 
 #### External resources

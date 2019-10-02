@@ -1,6 +1,6 @@
 ## Authenticity through Cryptographic Signing
 
-> We recommend that you read [Public Key Cryptography](public-key-cryptography.md) and [Cryptographic Hashes](cryptographic-hash.md) before reading this section.
+> We recommend that you read [Public Key Cryptography](1-7_public-key-cryptography.md) and [Cryptographic Hashes](1-4_cryptographic-hash.md) before reading this section.
 
 #### What you'll learn
 
@@ -52,11 +52,11 @@ As in our example above, cryptographic signing can provide authenticity to messa
 
 ## Verifying software
 
-Perhaps the most explicit and common use of cryptographic signatures is for verifying software, even if you aren't aware of it.  Software, such as apps, will only do what their developers want and say they will do if they haven't been tampered on the way from the developer to your computer or phone.  Responsible developers will sign their products, in the same way as we describe for messages.  A program or app is really just a computer file (or set of files), which is just a sequence of characters, or a type of message.  If a developer has signed their software using public key cryptography, a careful users can check the signature by getting the developer's public key and performing the validation illustrated above.  (The developer should provide their public key via a channel different from the one you downloaded the software from.  This would allow an [out-of-band comparison](man-in-the-middle.md) -- the public key, which you use for validation, is out-of-band from the message, or software download.)
+Perhaps the most explicit and common use of cryptographic signatures is for verifying software, even if you aren't aware of it.  Software, such as apps, will only do what their developers want and say they will do if they haven't been tampered on the way from the developer to your computer or phone.  Responsible developers will sign their products, in the same way as we describe for messages.  A program or app is really just a computer file (or set of files), which is just a sequence of characters, or a type of message.  If a developer has signed their software using public key cryptography, a careful users can check the signature by getting the developer's public key and performing the validation illustrated above.  (The developer should provide their public key via a channel different from the one you downloaded the software from.  This would allow an [out-of-band comparison](1-5_man-in-the-middle.md) -- the public key, which you use for validation, is out-of-band from the message, or software download.)
 
 ## Managing fingerprint validation and the web of trust
 
-To trust Assata's public key, Bobby should really verify the public key by checking the fingerprint of key as [we have described](man-in-the-middle.md).  Otherwise, Edgar the interloper could furnish Bobby with a public key that he holds the corresponding private key for.  Once Bobby has verified that Assata's public key is genuinely hers, Bobby can cryptographically sign Assata's public key (with his own private key).  This allows Bobby to keep track of the public keys that he has verified and allows him to share Assata's key with other people as follows.
+To trust Assata's public key, Bobby should really verify the public key by checking the fingerprint of key as [we have described](1-5_man-in-the-middle.md).  Otherwise, Edgar the interloper could furnish Bobby with a public key that he holds the corresponding private key for.  Once Bobby has verified that Assata's public key is genuinely hers, Bobby can cryptographically sign Assata's public key (with his own private key).  This allows Bobby to keep track of the public keys that he has verified and allows him to share Assata's key with other people as follows.
 
 Suppose Cleaver wants to send Assata an encrypted message, and wants to be sure that Edgar is not going to play the man in the middle.  But Cleaver does not have a secondary channel to verify Assata's public key through.  However, Cleaver has received and verified Bobby's public key.  So Bobby can send Assata's public key to Cleaver with his signature.  If Cleaver trusts Bobby, and has verified his public key, then Cleaver can verify his signature on Assata's public key and trust that Assata's public key is genuine.
 

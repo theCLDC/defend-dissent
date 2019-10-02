@@ -4,7 +4,7 @@ encoding: "utf-8"
 
 ## Public Key Cryptography
 
-> We recommend that you read about [modern cryptography](modern-cryptography.md) and [exchanging keys](key-exchange.md) before reading this section.
+> We recommend that you read about [modern cryptography](1-2_modern-cryptography.md) and [exchanging keys](1-3_key-exchange.md) before reading this section.
 
 #### What you'll learn
 
@@ -13,7 +13,7 @@ encoding: "utf-8"
 
 ---
 
-Encryption protocols can be classified by two major types.  In *symmetric key cryptography*, the key used to decrypt a message is the same as (or easy to transform from) the key used to encrypt the message.  This is the case for the basic ciphers (Caesar, Vigen&egrave;re and the one-time pad) that we described in the [What is encryption?](cryptography.md) chapter.  (There are, of course, modern symmetric key ciphers that are used, for example, to encrypt the data on your phone or computer.)  As we saw, these protocols are challenging to use for communication because you need to first find some way to privately share the key with your communication partner.  Diffie-Hellman [key exchange](key-exchange.md) gave a method for two people to generate a shared key (that can be used in a symmetric key encryption protocol) while only communicating over an insecure channel (such as the Internet).
+Encryption protocols can be classified by two major types.  In *symmetric key cryptography*, the key used to decrypt a message is the same as (or easy to transform from) the key used to encrypt the message.  This is the case for the basic ciphers (Caesar, Vigen&egrave;re and the one-time pad) that we described in the [What is encryption?](1-1_cryptography.md) chapter.  (There are, of course, modern symmetric key ciphers that are used, for example, to encrypt the data on your phone or computer.)  As we saw, these protocols are challenging to use for communication because you need to first find some way to privately share the key with your communication partner.  Diffie-Hellman [key exchange](1-3_key-exchange.md) gave a method for two people to generate a shared key (that can be used in a symmetric key encryption protocol) while only communicating over an insecure channel (such as the Internet).
 
 *Asymmetric key cryptography* or *public key cryptography* solves the key sharing problem in a different way.  Rather than have one key that is used to both encrypt and decrypt, public key cryptography uses two keys, one key to encrypt (called the *public key*) and one key to decrypt (called the *private key*).  This pair of keys have the property that:
 1. It is infeasible to generate the private key from the public key: the keys must be generated together.
@@ -53,7 +53,7 @@ US export regulations regarding cryptography remain in force, but were liberaliz
 
 #### What to learn next
 
-* [Crytographic signing.](authenticity.md)
+* [Crytographic signing.](1-8_authenticity.md)
 
 #### External resources
 

@@ -1,6 +1,6 @@
 ## Cryptographic Hash
 
-> We recommend that you read [What is encryption?](cryptography.md) and [Modern cryptography](modern-cryptography.md) before reading this section.
+> We recommend that you read [What is encryption?](cryptography.md) and [Modern cryptography](1-2_modern-cryptography.md) before reading this section.
 
 #### What you'll learn
 
@@ -20,7 +20,7 @@ A *cryptographic hash* function has the following properties that make it useful
 
 The first two of these properties are similar to properties of most encryption protocols.  If you encrypt the same message on two different occasions, you would expect the same result, assuming you are using the same encryption key.  Given only the ciphertext, it should be infeasible to generate the plaintext (without the decryption key).  However, encryption allows you to go backwards, from ciphertext to plaintext, using the decryption key.  Hash functions are inherently one-way: there is no key to go backwards.  That the result is sometimes called a digest or a fingerprint is a useful analogy: while the output of a cryptographic hash function does not encode all of the information of the input message (in the way that a ciphertext does), it encodes enough information that you can use it to identify the input (relying on Properties 1 and 3) and that this is very difficult to fake (Property 2).
 
-We will see applications of cryptographic hash functions in the sections on [Passwords](passwords.md), [Man-in-the-middle attacks](man-in-the-middle.md) and [Public-key cryptography](public-key-cryptography.md), but let's look at a simple use here, known as a *commitment scheme*.
+We will see applications of cryptographic hash functions in the sections on [Passwords](1-6_passwords.md), [Man-in-the-middle attacks](1-5_man-in-the-middle.md) and [Public-key cryptography](1-7_public-key-cryptography.md), but let's look at a simple use here, known as a *commitment scheme*.
 
 ### Using cryptographic hash functions to prove how smart you are
 
@@ -60,9 +60,9 @@ We should disclose the particulars of the case, which involves possession of chi
 
 #### What to learn next
 
-* [Passwords](passwords.md)
-* [How the man in the middle can foil your crypto, and what you can do about it.](man-in-the-middle.md)
-* [Public-key cryptography](public-key-cryptography.md)
+* [Passwords](1-6_passwords.md)
+* [How the man in the middle can foil your crypto, and what you can do about it.](1-5_man-in-the-middle.md)
+* [Public-key cryptography](1-7_public-key-cryptography.md)
 
 #### External resources
 

@@ -50,8 +50,8 @@ Of course, the one-time pad has the practical problem of how one how to exchange
 
 #### What to learn next
 
-* [Modern Cryptography](modern-cryptography.md)
-* [Key Exchange: How to agree on a cryptographic key over the Internet](key-exchange.md)
+* [Modern Cryptography](1-2_modern-cryptography.md)
+* [Key Exchange: How to agree on a cryptographic key over the Internet](1-3_key-exchange.md)
 
 #### External resources
 

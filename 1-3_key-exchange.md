@@ -4,7 +4,7 @@ encoding: "utf-8"
 
 ## Key exchange: How to agree on a cryptographic key over the Internet
 
-> We recommend that you read [What is encryption?](cryptography.md) and [Modern Cryptography](modern-cryptography.md) before reading this section.
+> We recommend that you read [What is encryption?](1-1_cryptography.md) and [Modern Cryptography](1-2_modern-cryptography.md) before reading this section.
 
 #### What you'll learn
 
@@ -25,7 +25,7 @@ This illustrates that it is possible to send something securely without meeting 
 
 ### A mathematical example: Exchanging a message without exchanging a key
 
-Let's see how we would do this without physical boxes and locks.  Suppose you have an encryption protocol where you can encrypt any text (as we always expect), that you can apply multiple times for *layers* of encryption (as we also always expect), and that you can encrypt and decrypt the layers in any order you wish and end up with the same result. A mathematical operation satisfying this last property is said to be *commutative*.  (all the encryption protocols we describe in [What is encryption?](cryptography.md) are commutative.) Let's see this with an example. 
+Let's see how we would do this without physical boxes and locks.  Suppose you have an encryption protocol where you can encrypt any text (as we always expect), that you can apply multiple times for *layers* of encryption (as we also always expect), and that you can encrypt and decrypt the layers in any order you wish and end up with the same result. A mathematical operation satisfying this last property is said to be *commutative*.  (all the encryption protocols we describe in [What is encryption?](1-1_cryptography.md) are commutative.) Let's see this with an example. 
 
 Assata encrypts the message
 
@@ -84,7 +84,7 @@ While the Diffie-Hellman protocol is strong and reliable, this highlights that t
 
 #### What to learn next
 
-* [How the man in the middle can foil your crypto, and what you can do about it.](man-in-the-middle.md)
+* [How the man in the middle can foil your crypto, and what you can do about it.](1-5_man-in-the-middle.md)
 
 #### External resources
 
