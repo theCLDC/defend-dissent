@@ -39,6 +39,15 @@ This open textbook can be read linearly -- begin with cryptography fundamentals,
 1. [Metadata](1-9_metadata.md)
 1. [Anonymous Routing](1-10_anonymous-routing.md)
 
+### Part II: Digital Suppression of Social Movements
+
+1. [Overview of digital threats to social movements](threat-overview.md)
+
+### Part III: Defending Social Movements - Technical and Operational Countermeasures
+
+1. [Endpoint security - updated and physically secure devices](3-1_devices.md)
+2. [Anonymity online: Tor](3-2_tor.md)
+
 <!--(to add: APPENDIX: [suggestions on community contributions: "bug reports"; "feature requests"](howto-contribute.md*))-->
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.*
