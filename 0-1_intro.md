@@ -1,59 +1,68 @@
-## Introduction, Scope & Goals 
+## Introduction: Why Digital Security?
 
-What are we trying to achieve in technical and political discussions of communications security for liberatory social movements?
+In the summer of 2013, Edward Snowden shook the world with a trove of disclosed documents from the National Security Agency, Central Intelligence Agency and a host of other global three-letter agencies.  For more than a year, there were weekly (if not daily) revelations of just how extensive the digital information gathering capabilities were, particularly of the United States.  It felt as though the NSA was able to get any information that went through internet or phone networks that wasn't encrypted plus some information that was weakly encrypted and some more information that wasn't encrypted on corporate servers.  That feeling is close to the truth.
 
-In this text we focus on the foundations of cryptography and digital communications, and attempt to delineate distinct classes of adversaries facing social movements seeking radical social and environmental change in the United States.  We define adversary classes in part by their *minimum known* surveillance capabilities.  Such capabilities arise variously from technical sophistication, financial resources, and legal authorities.  Because of the international scope of many social movement campaigns and the global reach of most powerful adversaries, we anticipate that much of this work will be relevant for social movements outside of the U.S. as well.
+At the time, I had been engaged in environmental activism and was aware of how social movements had historically suffered from state repression that was made possible through spying.  The sheer extent of the information that the NSA and CIA were able to gather meant that suppression efforts by the State could be all the easier and more effective.  The more information the State knows about your activities, the easier it is for the State to interfere with your goals. 
 
-### Who is this text written for? and other definitions
+So, I was worried.  Could we combat climate change when the odds are stacked against all the groups working to do so?  What about systemic racism?  Did we have any hope?  
 
-We write for individuals organizing movements working for the liberation of human and non-human animals and to preserve the ecological systems upon which all depend.  For students of [CS 175](https://secure.oregonstate.edu/ap/cps/documents/view/123515) (at Oregon State University) and any course examining issues of difference, power, and discrimination, particular attention is given to social movements that employ direct action tactics, as such movements tend to be the focus of the broadest spectrum of State suppression methods.
+Not long after the Snowden revelations, I partnered with the Civil Liberties Defense Center (CLDC), a non-profit that provides legal support to  social movements that "seek to dismantle the political and economic structures at the root of social inequality and environmental destruction."  The CLDC gives know-your-(legal)-rights trainings to social movement participants emphasizing how to protect and invoke one's First and Fourth Amendment rights: the right to free speech and the right to no illegal searches and seizures.  These rights are eroded with mass surveillance.	This is quite clear with Fourth Amendment rights.  For First Amendment rights, legal scholars often point to the *chilling effect*: that citizens restrict their speech if they know they are being surveilled.  To complement the CLDC's legal trainings, I started regularly holding digital security trainings for activists, centered around the premise that **encryption is the only way to protect your First and Fourth Amendment rights in the modern world of mass surveillance**.  This book has grown out of these educational efforts.
 
-In this text, "the State" refers to any constellation of governmental and non-governmental organizations that represent established power structures with the resources and motivation to deploy a wide range of suppressive strategies and sophisticated technical measures against social movements.  A common aim is to neutralize and otherwise oppose their political objectives.
+### Downloading a "secure" app isn't enough
 
-### What does Security even mean?  
+It isn't enough to download a "secure" app.  Firstly, what does
+"secure" even mean?  Security is a complex, subjective and
+multifaceted concept.  While perfect freedom from risk is usually out
+of reach, especially when digital technologies are involved, strong
+relative protections are possible.  In order to evaluate or at least explain (and convince a group a people to take advantage of) the relative protections of an app requires understanding at least a little bit about cryptography and what information is at risk (and with what likelihood) when using a given app or digital service.
 
-Security is a complex, subjective, gendered, and otherwise multifaceted concept.  While perfect freedom from risk is usually out of reach, especially when digital technologies are involved, strong relative protections are possible.  Security can be thought of as both: (a) the perception of being free from or protected against physical and social harm, or threats of harm; and (b) the availability of safe or defensible spaces to carry out social movement work.  
+Our trainings scratch the surface of the information that I would like to impart.  Social movement participants tend to be busy people and often want a set of simple and doable digital security recommendations from people that they trust.  My goal with this book (and the companion course at Oregon State University: CS 175 Communications Security and Social Movements) is to increase the number of people who know enough to make those recommendations (or at least know how and where to learn more).
 
-This topic has been explored in depth for two at-risk groups: journalists and human rights workers.  Digital security practitioners (e.g. trainers, auditors, risk assessors) mainly focus on risks facing individuals and groups in geographical regions where the legal system or extrajudicial political violence threatens human rights defenders, perceived political adversaries, journalists, whistleblowers, and sources.  Accordingly, there are well-developed digital security resources tailored to these groups (e.g. [Access Now](https://accessnow.org), [Security in a Box](https://securityinabox.org/en/), and the [Digital First Aid Kit](https://www.digitaldefenders.org/digitalfirstaid/)) as well as educational materials for trainers engaging with them (e.g. [Holistic Security](https://holistic-security.tacticaltech.org/) and [Level Up](https://level-up.cc)).  In the same vein, critical work assessing digital threats tend to emphasize overtly authoritarian states (e.g. the many excellent investigations and reports by [Citizen Lab](https://citizenlab.ca)).
+### Political Scope of this book
 
-For social movements based in the United States of America, where political expression has a high degree of formal protection under the law, digital security recommendations are often directed at the general public (e.g. [Securing your Digital Life like a Normal Person](https://medium.com/@mshelton/securing-your-digital-life-like-a-normal-person-a-hasty-and-incomplete-guide-56437f127425)) or at-risk individuals (e.g. the excellent [Library Freedom Project](https://libraryfreedomproject.org/resources/), as well as [a DIY Guide to Feminist Cybersecurity](https://hackblossom.org/cybersecurity/)).  Certain resources (e.g. [Equality Labs](https://www.equalitylabs.org/internet-freedom-and-digital-security/), [Ruckus Society](https://ruckus.org/training-manuals/security-tips-resources/), and certain parts of [EFF's Surveillance Self-Defense](https://ssd.eff.org/)) are explicitly intended for communities of color and direct-action oriented environmental, social justice, and anti-racist groups, who have often experienced generations of  targeted police violence and state suppression.  
+As might be gathered from the references to the First and Fourth
+Amendments, this book is rooted in political arena of the United
+States.  While much of the book will be relevant outside of the US
+as well, we recommend that anyone applying this knowledge outside of the US get additional country-specific advice.
 
-Most general digital security advice is relevant to social movement activists, of course, as a baseline of good security practice.   So what exactly is missing, and what are we trying to address here?  
+### Overview of this book
 
-### Goals
+This book is not intended to be comprehensive for three reasons:
+* I want this book to be accessible to any person who is curious.  Going into further details in cryptography would require some college-level mathematics. I also believe that one doesn't need to understand specific cryptographic protocols to make reasoned digital security recommendations -- one can lean on cybersecurity experts for that.
+* The state of mass surveillance and the apps that are available to counter surveillance are constantly changing.  As I put the finishing touches on this book, I am resisting the urge to include the latest news on State surveillance capabilities.
+* I want the book to be short enough to read in a weekend.
 
-We have three primary goals: 1) to provide continuing-education resources for computer-savvy or techno-curious members of social movements, who may lack formal computer science training but who stand to benefit from a (relevant, accessible) deeper dive into technical topics; 2) a clear, up-to-date articulation of specific digital threats facing social movement groups, especially to support individuals seeking to convince their colleagues of the importance of implementing strong digital security measures; and 3) promoting movement-wide adoption of better-secured digital platforms and practices.
+The book has three parts as follows:
 
-### Comprehending and categorizing threats
+#### Part I: An Introduction to Cryptography
 
-Digital threat modeling--understanding what information or communications need to be protected, who they need to be protected from, the risk (likelihood and degree of harm) associated with compromise--is the starting point of most structured approaches to digital security.  Comprehending the full range of digital threats available to adversaries is difficult enough--realistically assessing the likelihood that these threats will be deployed (especially by various levels of law enforcement or private security) is an added challenge.
+This is a basic introduction to cryptography: enough to understand the basics of what information is protected and what is not and why.  Some interesting concepts (such as forward secrecy and blockchains) are left out because I felt that it might overwhelm my intended audience.  However, the curious reader, after reading Part I, should be able to appreciate, say, the Wikipedia articles on more advanced topics like forward secrecy and blockchains.
 
-This is covered in detail in the [Overview of threats](threat-overview.md) section.
+When describing cryptographic protocols, most people refer to a cast of characters: Alice sends a message to Bob and Eve might be eavesdropping on their communications.  The companion course for this book focuses on Civil Rights era social movements, particularly Black Liberation movements, and the State suppression of those movements.  To that end, rather than Alice, Bob and Eve, we use the running example of Assata communicating with Bobby, and Edgar is eavesdropping:
+* Assata Shakur was a member of Black Liberation Army and Black Panther Party (in the early 1970s), was targeted by the FBI (as described in the Chapter on [Mechanisms of Social Movement Suppression](2-01_suppression.md)), and is still a political refugee in Cuba.
+* Bobby Seale is a co-founder of the Civil Rights Era Black Panther Party and was also subject to surveillance and harassment by the FBI.
+* J. Edgar Hoover founded the FBI and has been deemed responsible for the surveillance and repressive efforts of the FBI.  We occasionally refer to Edgar as "the Man" where appropriate (i.e. in the Chapter on [The Man in the Middle](1-5_man-in-the-middle.md), where a man-in-the-middle attack is standard cryptographic terminology.
 
-### Properties of effective countermeasures
+While the remainder of the book is likely to require significant updates in the coming years, Part I is likely to stand the test of time.
 
-This text examines a small set of security-focused apps, technologies, and platforms.  These are used as case studies to illustrate fundamental elements of good security practices and security-enhancing technologies:
+#### Part II: Digital Suppression of Social Movements (in the US)
 
-1. **Minimize** the number of platforms, apps, devices, and people requiring absolute **trust**.  Given that, for most entities, full, continuous verification is not feasible, the fewer entities that must be trusted with privileged access to information or devices, the fewer opportunities exist for an adversary to compromise information or device security.  This negative concept of trust should be contrasted with **trustworthiness**.  Trustworthy people and relationships, as well as certain technologies, are essential to social movement organizing and should be embraced and nurtured!  At the same time, technological and operational choices should be made to *require* the trust of as few entities as possible.  This is another way of saying reducing attack surface.
-1. [Open source](modern-cryptography#security-is-provided-by-transparency) apps should be used whenever possible.  Only apps for which source code is available can be audited on a free and ongoing basis.
-1. [End to end encrypted](end-to-end-encryption.md) apps should be used whenever possible, such that communications infrastructure and platforms are not required to be trusted.  
-1. Devices should remain under your physical control (they are not confiscated or otherwise physically accessed without your knowledge).
-1. Device operating systems and firmware should be updated to patch security vulnerabilities.
-1. Use [strong passwords](1-6_passwords.md) and [good password practices](password-practices.md).
-1. [Compartmentalize](security-culture.md) communications whenever feasible. 
+This part is rather depressing as it overviews:
+* How social movements have historically been suppressed in the US (and where surveillance plays a role) in the Chapter on [Mechanisms of Social Movement Suppression](3-0_defense_overview.md), and
+* What surveillance and other digital threats are in use in the US in the Chapter on [Digital Threats to Social Movements](3-1_security_culture.md)
+In this Part, we use "the State" to refer to any constellation of governmental
+and non-governmental organizations that represent established power
+structures with the resources and motivation to deploy a wide range of
+suppressive strategies and sophisticated technical measures against
+social movements.
 
-### What is the end goal of better communications security and digital security practices?
+We keep this part deliberately short so that we can move onto the last part, which is more empowering.  In Part II, we pick *illustrative examples* to give an overview of how mechanisms of social movement suppression are used and what types of surveillance and other digital threats are in play.  The Chapter on [Digital Threats to Social Movements](3-1_security_culture.md), in particular, will never be up to date, as new threats and capabilities are constantly being developed and deployed.  We hope that anyone who reads this Part quickly follows up with the last Part.
 
-In the real world, digital security can never be guaranteed.  In part this is due to the intrinsic complexity of digital systems <!--[if sensible, ref proof that general purpose computers inevitably have bugs]-->.  A second major factor is that no fully open computer exists, i.e. the proprietary design of nearly all microprocessors, motherboards (including systems-on-chips), peripherals, and device drivers preclude full and transparent security audits.  <!--[name some specific concerns: ref Intel ME,  x-ray/electron micrograph evidence of undocumented 3G].-->  
+#### Part III: Defending Social Movements (in the US)
 
-In this light, defensive security measures become *more* meaningful as one moves away from securing the individual toward securing social movements and organizations.  While guaranteeing a particular individual's safety might be infeasible, each security measure undertaken increases the costs and risks of surveillance.  For well-resourced adversaries, financial cost is perhaps less relevant than the political risk associated with the discovery or disclosure of covert surveillance.  Consider first that mass surveillance that relies on passive data collection is both cheap and often undetectable.  Such passive data collection methods are relatively easy to defeat, using the simple countermeasures meeting the criteria above.  Active surveillance methods required to circumvent such countermeasures are often invasive and risk discovery or provoking  whistleblowers to disclose surveillance activities.  Social movements, especially those deploying non-violent methods, may gain strategic/political advantage over an adversary that deploys sophisticated surveillance methods normally justifiable only in the case of averting direct threats to human life.   
+Part III is intended to be empowering.  Starting with threat analysis (which is country and context dependent), we quickly move into *classes* of tools to protect your information.  I say classes of tools rather than specific tools as specific tools can come and go as the projects supporting those tools or apps can fail or appear and it will not be feasible to update this book multiple times a year.  This section is country dependent, as the availability of or associated risk of using certain tools can depend on the political context in which you are.  For example, it can be more challenging to use Tor (an anonymity-providing internet browser, which we will discuss in the Chapters on [Anonymous Routing](1-a10_anonymous-routing.md) and [Protecting your Identity](3-5_apac.md)) in certain countries that engage in widespread censorship (such as China).
 
-In summary, social movements and their individual members can act in solidarity with one another <!--[ref machine learning in future version]--> to improve the collective security of social movements that challenge injustices and the inequitable distribution of social, economic, and political power.
+#### What to learn next 
 
-### Selected external resources
-
-* [Holistic Security](https://holistic-security.tacticaltech.org/)
-* [Surveillance Self-Defense](https://ssd.eff.org/)
-* [Security Education Companion](https://sec.eff.org/)
-* [Security in a Box](https://securityinabox.org/en/)
-* [Digtial First Aid Kit](https://www.digitaldefenders.org/digitalfirstaid/)
+* [What is Encryption?](1-1_cryptography.md)
+* [Mechanisms of Social Movement Suppression](2-01_suppression.md)
