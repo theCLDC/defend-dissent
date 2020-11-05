@@ -17,8 +17,8 @@ The best way to protect your online communications is through encryption.  But n
 
 The most basic version of encrypted communications is in-transit encryption, where your information is encrypted between your computer and a server.  In the context of browsing the web, this is the best you can do to protect the content (but not the metadata) of your communications from an adversary.  Most web-browsers indicate whether your browsing is encrypted by the url as illustrated below.
 	
-![HTTP, not encrypted](/pictures/http-example.png "HTTP, not encrypted")
-![HTTPS, encrypted](/pictures/https-example.png "HTTPS, encrypted")	
+![HTTP, not encrypted](pictures/http-example.png "HTTP, not encrypted")
+![HTTPS, encrypted](pictures/https-example.png "HTTPS, encrypted")	
 
 In the top example, the information is transmitted unencrypted.  The full url in this case is `http://whenisgood.net` where `http` indicates accessing a webpage without encryption.  This browser (Firefox) emphasizes this point with a struck-through lock.  In the bottom example, the information is encrypted: `https` indicates accessing a webpage with encryption and the `s` stands for secure.  The keys used for this encryption are exchanged between your computer and the when2meet servers using Diffie-Hellman key exchange as described in the Chapter on [Exchanging Keys for Encryption](1-3_key-exchange.md).
 
